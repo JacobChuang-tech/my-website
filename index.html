@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <script>
+        // Automatically redirect to the appropriate language folder
+        // This will be based on browser language, defaulting to English
+        const userLang = navigator.language || navigator.userLanguage;
+        if (userLang.startsWith('zh')) {
+            window.location.href = 'zh-tw/';
+        } else if (userLang.startsWith('ja')) {
+            window.location.href = 'jp/';
+        } else {
+            window.location.href = 'en/';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="language-selector">
+                <a href="../en/" class="active">English</a>
+                <a href="../jp/">日本語</a>
+                <a href="../zh-tw/">繁體中文</a>
+            </div>
+        </nav>
+        <h1>Welcome to My Website</h1>
+    </header>
+    
+    <main>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>This is my personal website where I share my thoughts and projects.</p>
+        </section>
+        
+        <section class="articles">
+            <h2>Recent Articles</h2>
+            <div class="article-list">
+                <!-- Article previews will go here -->
+                <article class="preview">
+                    <h3><a href="../articles/article1.html">My First Article</a></h3>
+                    <p class="date">May 15, 2025</p>
+                    <p class="excerpt">This is a preview of my first article...</p>
+                </article>
+            </div>
+            <a href="articles.html" class="view-all">View All Articles</a>
+        </section>
+        
+        <section class="newsletter">
+            <h2>Subscribe to My Newsletter</h2>
+            <form id="subscribe-form" name="newsletter" method="POST" data-netlify="true">
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 My Personal Website</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

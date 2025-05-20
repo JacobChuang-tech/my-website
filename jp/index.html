@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私のウェブサイト</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="language-selector">
+                <a href="../en/">English</a>
+                <a href="../jp/" class="active">日本語</a>
+                <a href="../zh-tw/">繁體中文</a>
+            </div>
+        </nav>
+        <h1>私のウェブサイトへようこそ</h1>
+    </header>
+    
+    <main>
+        <section class="about">
+            <h2>私について</h2>
+            <p>これは私の考えやプロジェクトを共有する個人サイトです。</p>
+        </section>
+        
+        <section class="articles">
+            <h2>最近の記事</h2>
+            <div class="article-list">
+                <!-- Article previews will go here -->
+                <article class="preview">
+                    <h3><a href="../articles/article1.html">最初の記事</a></h3>
+                    <p class="date">2025年5月15日</p>
+                    <p class="excerpt">これは最初の記事のプレビューです...</p>
+                </article>
+            </div>
+            <a href="articles.html" class="view-all">すべての記事を見る</a>
+        </section>
+        
+        <section class="newsletter">
+            <h2>ニュースレターに登録する</h2>
+            <form id="subscribe-form" name="newsletter" method="POST" data-netlify="true">
+                <input type="email" id="email" name="email" placeholder="メールアドレス" required>
+                <button type="submit">登録</button>
+            </form>
+            <p id="form-message"></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 私のウェブサイト</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
