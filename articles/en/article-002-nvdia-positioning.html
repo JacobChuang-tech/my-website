@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision & Positioning #002 – Why Focus on Positioning? Starting from Jensen Huang's View on Positioning - My Personal Website</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        /* Article-specific styles */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .article-date {
+            color: #777;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .article-category {
+            color: #3498db;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .article-content {
+            line-height: 1.8;
+            color: #333;
+        }
+        .article-content p {
+            margin-bottom: 20px;
+        }
+        .article-content h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .article-content h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .article-content blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+            background-color: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+        .article-content li {
+            margin-bottom: 5px;
+        }
+        .language-versions {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #28a745;
+        }
+        .language-versions strong {
+            color: #28a745;
+        }
+        .language-versions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .language-versions a:hover {
+            text-decoration: underline;
+        }
+        .article-tags {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #e0e0e0;
+        }
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .nav-link {
+            color: #3498db;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .back-link {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .navigation-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .language-versions a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="language-selector">
+                <a href="../../en/" class="active">English</a>
+                <a href="../../jp/">日本語</a>
+                <a href="../../zh-tw/">繁體中文</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="article-container">
+            <!-- Language version links -->
+            <div class="language-versions">
+                <strong>Read this article in:</strong>
+                <a href="../jp/article-002-nvdia-positioning.html">日本語</a>
+                <a href="../zh-tw/article-002-nvdia-positioning.html">繁體中文</a>
+            </div>
+            
+            <div class="article-header">
+                <div class="article-category">Business Strategy</div>
+                <h1>Decision & Positioning #002 – Why Focus on Positioning? Starting from Jensen Huang's View on Positioning</h1>
+                <div class="article-date">November 2, 2023</div>
+            </div>
+            
+            <div class="article-content">
+                <p>What is positioning? Why do I want to write content about positioning? Perhaps some people are curious about what this means, or why I want to write about such a topic.</p>
+                
+                <p>When answering this question, let me start with one of Jensen Huang's speeches.</p>
+
+                <h3>Jensen Huang on NVIDIA's Strategic Positioning</h3>
+                
+                <blockquote>
+                    "CPU is something that can do everything, but won't do everything expertly; while GPU cannot do everything, but GPU can do just one thing to perfection... NVIDIA invests in making GPUs so that GPU computing in specific areas can be thousands of times faster than CPU computing."
+                    <br><br>— Jensen Huang
+                </blockquote>
+                
+                <p>This might raise a question: if GPUs are so good (can be a thousand times faster than CPUs in specific computing areas), then why not let GPUs do everything?</p>
+                
+                <blockquote>
+                    "There are many, many applications that can be accelerated through GPU. For example, we can accelerate all kinds of image processing things, particle physics things. We can accelerate all types of things including linear algebra. We can accelerate applications in many fields. But if we let GPU accelerate too many fields, then GPU would become CPU again."
+                    <br><br>— Jensen Huang
+                </blockquote>
+                
+                <p>CPU is like a student who can take ten subjects and score 60 points in each. GPU is like a student who can score 98 points in one subject and 0 points in all the rest. If we want GPU to achieve average scores in every subject, then GPU would become CPU, unable to specialize in one subject, and ultimately only scoring 60 points in every subject.</p>
+                
+                <p>So it seems we should just focus on making GPUs that can only excel in one subject, right? What problems would a GPU that only excels in one subject have?</p>
+                
+                <blockquote>
+                    "If you only accelerate one application, then the market size is not big enough to fund your R&D. We must find the delicate balance. This is our company's strategic journey."
+                    <br><br>— Jensen Huang
+                </blockquote>
+                
+                <p>If there's a student who can score 98 points in one subject but 0 points in all others, would you hire them as an interviewer? Imagine during job interviews, interviewers probably wouldn't want to find someone who has native-level English but zero scores in other professional knowledge, interpersonal relationships, and social skills. Therefore, Jensen Huang needs a GPU that scores 88 points in three subjects but 0 points in others, because a GPU that only excels in one subject has too small a market to generate economies of scale.</p>
+                
+                <p>So the question becomes: which three subjects should we choose?</p>
+                
+                <blockquote>
+                    "How do we choose? We do things that have never been done in the world. The reason for choosing very difficult things is that this gives you a lot of time to learn it. If something is very easy to do, it's highly competitive. So you must choose very difficult things. And that difficult thing itself will prevent many other people, because whoever can endure the longest wins. So we chose very difficult things. I've shared many times about pain and suffering. It's because it's really difficult."
+                    <br><br>— Jensen Huang
+                </blockquote>
+                
+                <blockquote>
+                    "If that's the case, why would I make mobile phone chips? How many companies in the world can make mobile phone chips? Many. Why would I make CPUs? We don't need all these things. So we naturally exclude ourselves from general commodity markets. We naturally exclude ourselves from general commodity markets. Because we chose amazing markets, extremely difficult things to accomplish, excellent talent joined us. And because we have patience to let them succeed, they did amazing things."
+                    <br><br>— Jensen Huang
+                </blockquote>
+                
+                <p>At this point, someone asked: NVIDIA has corresponding resources to compete with TSMC in chip manufacturing, so why doesn't NVIDIA do it?</p>
+                
+                <blockquote>
+                    "The reason we don't do manufacturing is because TSMC does it too well. Why would I want to take away their job? I like the people at TSMC. They are my good friends. CC is my good friend. Mark is also my good friend. Just because I can make money and get orders, should I enter this field? They do it very well for me. Let's not waste time repeating what they've already done. Let's waste time doing things that no one has done yet."
+                    <br><br>— Jensen Huang
+                </blockquote>
+                
+                <p>From the above content, we can see that the fields Jensen Huang/NVIDIA chooses to invest in are all very novel and very difficult markets, and they all invested very early, even when there wasn't a clear market yet (in plain terms, this means no one wanted to spend money on this project—even if you made something, it couldn't sell well). Just like NVIDIA started investing in AI development from 2012, and it wasn't until the AI explosion in 2022/2023 that NVIDIA truly received huge returns.</p>
+                
+                <p>But NVIDIA successfully found its positioning, entering early difficult problems, trying to work with developers to find solutions. NVIDIA doesn't do things that others already do well, NVIDIA doesn't compete for others' market share, focusing on solving problems, focusing on difficult things.</p>
+
+                <h3>Back to My Own Positioning</h3>
+                
+                <p>As a lawyer, from society's perspective, it seems I've already found my positioning?!</p>
+                
+                <p>But actually, I'm still very, very far from finding my own positioning. In-house counsel, litigation lawyers, non-litigation lawyers—and within each category, they can be further subdivided. In-house counsel can be further divided into tech company legal counsel, traditional industry company legal counsel, financial/banking legal counsel, pharmaceutical-related company legal counsel. Although these jobs are all legal work, the differences are actually bigger than imagined. Almost no tech company's chief legal officer comes from a banking legal background, and almost no bank's chief legal officer comes from a tech company legal background.</p>
+                
+                <p>So I'm always thinking: where should I go, where should I position myself? In finance? In tech companies? In traditional industries? In law firms? Must I always imitate and copy others' paths? What can I invest in doing?</p>
+                
+                <p>As I get older, I become more aware of my limitations—limited time, limited energy, limited ability. Precisely because these limitations exist, I feel more deeply the importance of finding my own positioning.</p>
+
+                <h3>Finding Your Positioning = Making Big Money?</h3>
+                
+                <p>So a question that might arise is: why do we need to find our own positioning? Why not just work smoothly, don't think about anything, and just keep doing what we're doing?</p>
+                
+                <p>"Finding your own positioning and continuously cultivating it is the only way to make a contribution to this world."</p>
+                
+                <p>Jensen Huang found NVIDIA's positioning, bringing huge wealth to the company and himself personally. But I think the huge wealth is just some form of recognition for NVIDIA's contributions. If NVIDIA had continued investing in mobile phone chips (NVIDIA abandoned mobile phone chips in 2014 and admitted that making mobile phone chips wasn't a good decision), then it's very likely we wouldn't have the current flourishing development of AI. Because NVIDIA made the flourishing development of AI possible and made huge contributions to human society as a whole, they received huge wealth.</p>
+                
+                <p>If I don't find my own positioning and just follow others blindly, doing programming languages today, learning accounting tomorrow, and studying film the day after, I can hardly imagine being able to make contributions in programming languages, accounting, and film simultaneously. I would very likely end up just becoming a pundit—a pundit who talks about everything but doesn't really understand anything. (Although TV pundits seem like a decent career path too, getting paid for talking randomly, but that wouldn't be the path I want.)</p>
+                
+                <p>This is also why I want to continuously research and explore through this newsletter how others find their positioning, so I can find my own positioning.</p>
+                
+                <p>If you've already found your positioning, I look forward to hearing about it. If you're also still searching for your own positioning, I'm also very much looking forward to hearing you share your process of finding your own positioning.</p>
+                
+                <p>If you also like this newsletter content, welcome to subscribe by filling in your email in the information section below, or share it with friends and invite them to subscribe together. If you have any feedback, welcome to reply to this email!</p>
+            </div>
+            
+            <!-- Optional: Article tags -->
+            <div class="article-tags">
+                <strong>Tags: </strong>
+                <a href="#" class="tag">Positioning</a>
+                <a href="#" class="tag">Jensen Huang</a>
+                <a href="#" class="tag">NVIDIA</a>
+                <a href="#" class="tag">Strategy</a>
+                <a href="#" class="tag">Career Development</a>
+                <a href="#" class="tag">Self-Reflection</a>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="../../en/" class="nav-link back-link">← Back to Home</a>
+                <a href="../../en/articles.html" class="nav-link">All Articles</a>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 My Personal Website</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

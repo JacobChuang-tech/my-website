@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>決策與定位 #008一生只遇見一次的後背包 - 我的個人網站</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        /* Article-specific styles */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .article-date {
+            color: #777;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .article-category {
+            color: #3498db;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .article-content {
+            line-height: 1.8;
+            color: #333;
+            font-family: 'PingFang TC', 'Microsoft JhengHei', 'SimHei', sans-serif;
+        }
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .article-content h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #34495e;
+            font-size: 1.4em;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        .article-content h3 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .article-content blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .article-content li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .article-content a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+        .intro-summary {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+            font-weight: 500;
+        }
+        .cotopaxi-background {
+            background-color: #d4f4dd;
+            border-left: 4px solid #28a745;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .decision-section {
+            background-color: #fff8e7;
+            border: 2px solid #ff9500;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .rejection-story {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+        }
+        .supply-chain-innovation {
+            background-color: #e2e3f0;
+            border-left: 4px solid #6f42c1;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .del-dia-story {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .alpaca-story {
+            background-color: #d1ecf1;
+            border: 1px solid #17a2b8;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .other-initiatives {
+            background-color: #d4edda;
+            border: 1px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .inspirational-quote {
+            background-color: #f0f8ff;
+            border: 2px solid #4169e1;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .personal-reflection {
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+        }
+        .highlight-question {
+            background-color: #e8f6f3;
+            border-left: 4px solid #1abc9c;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-weight: 500;
+            border-radius: 0 5px 5px 0;
+        }
+        .key-point {
+            background-color: #fef9e7;
+            border: 1px solid #f39c12;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, #3498db, transparent);
+            margin: 30px 0;
+        }
+        .language-versions {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #28a745;
+        }
+        .language-versions strong {
+            color: #28a745;
+        }
+        .language-versions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .language-versions a:hover {
+            text-decoration: underline;
+        }
+        .article-tags {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #e0e0e0;
+        }
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .nav-link {
+            color: #3498db;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .back-link {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .navigation-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .language-versions a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="language-selector">
+                <a href="../../en/">English</a>
+                <a href="../../jp/">日本語</a>
+                <a href="../../zh-tw/" class="active">繁體中文</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="article-container">
+            <!-- Language version links -->
+            <div class="language-versions">
+                <strong>閱讀其他語言版本：</strong>
+                <a href="../en/article-008-pagonia-positioning.html">English</a>
+                <a href="../jp/article-008-pagonia-positioning.html">日本語</a>
+            </div>
+            
+            <div class="article-header">
+                <div class="article-category">決策與定位</div>
+                <h1>決策與定位 #008一生只遇見一次的後背包</h1>
+                <div class="article-date">2023年12月23日</div>
+            </div>
+            
+            <div class="article-content">
+                <!-- YOUR ORIGINAL CONTENT STARTS HERE -->
+                <p>Hi 大家早，</p>
+
+                <div class="intro-summary">
+                    <p><strong>上期內容將介紹曾被譽為是下一個馬克祖克柏，20歲就成功募資100萬資金的天才工程師Jessica跟帶領他從地獄爬出來的決策故事。<br>本期內容將介紹一間想要賺錢又想要改變世界貧窮處境的戶外運動品牌，來看在創立當初的決策與定位，去深入瞭解背後的故事。</strong></p>
+                </div>
+
+                <h3>Cotopaxi 背景介紹</h3>
+
+                <div class="cotopaxi-background">
+                    <p>這是間創立於2014年的戶外休閒運動品牌，以羊駝作為商標的戶外休閒品牌，2021年成功募集到4500萬美金（約台幣18億）作為 C 輪資金。在2022年已經成為一間擁有350名員工，和年度收入達有1億美金收入的公司，每年成長可達40%以上。這間公司最著名的產品系列就是一款獨一無二的後背包，也是一生只能買到一次的後背包。如果只是單純客製化的後背包，這並沒有什麼特別之處，但這間公司從創立第一天就想要解決貧困和支持社區發展的營利企業。</p>
+                </div>
+
+                <h3>創辦人重要決策 #1 -用使命找到志同道合的人，即使被拒絕一百次</h3>
+
+                <div class="decision-section">
+                    <p>創辦人 David 為了在2014年讓Cotopaxi起步，需要籌集資金。在當時David先去找他的律師好友請求募集資金的建議。他的律師好友很認真的跟他說，你在募資時不要提到你的企業就是為了做慈善，也不要提到你的企業會將營收中的一定比例支出給慈善工作。因為沒有任何投資人會希望投資一間在還沒賺錢前就開始捐錢的生意感興趣的公司，而你可以再把公司運作上軌道後再將公司轉型。</p>
+
+                    <p>David 非常認同此律師好友的想法，因為每個投資人所進行的投資都是為了要賺取高額報酬，並不希望投資一間一開始可能決定要以慈善使命作為志業的營利公司。但是David認為他想要創立一間以此為使命的企業，他不希望進行任何隱瞞。於是，他就拿著這樣的計畫（公司是為了解決世界上的貧窮為志業，並且公司會將收入捐贈作為慈善目的使用）到各個投資人前說明他的計畫。</p>
+                </div>
+
+                <div class="rejection-story">
+                    <p>誠如David的律師好友所說的一般，沒有什麼投資人對這樣的一間公司感興趣。David總共被拒絕了超過100次。幾個月之後才開始有投資人對此感到興趣，他提出的要求是，他願意投資100萬美元，但前提是David必須找到其他投資人總計200萬美元的投資。於是David找了許多親朋好友，過去生意上往來的夥伴，超過20人來參與投資，最終他們用接近300萬美元的種子資金開啟了Cotopaxi。</p>
+
+                    <p>David於訪談中談起這段過程，他說我每天都遭到拒絕，這很痛苦，非常痛苦。</p>
+
+                    <p>（我自己想想如果帶著滿腔熱血時去面試各個有興趣的公司，經歷過100次的拒絕，無法面試上任何一間公司，這樣的挫折想必是非常非常大⋯⋯，甚至可能已經開始啃老了⋯⋯。）</p>
+                </div>
+
+                <p>David 同時在 LinkedIn 上搜尋發展戶外運動品牌不可或缺的夥伴，包含曾經在各大戶外運動品牌工作過的產品、戶外裝備設計師等。第一天就跟他們說明這品牌的目的、存在的意義跟價值，吸引志同道合的夥伴加入。因為 David 深信，在談論產品之前，在談論市場進入策略之前，從一開始工作夥伴就有強大的核心價值觀時，那麼最終會推動結果。因為核心價值觀最終會塑造組織文化，文化最終塑造和決定每個員工、公司行為，然後最終這些行為決定員工及公司的結果。</p>
+
+                <h3>創辦人重要決策 #2-再造供應鏈</h3>
+
+                <div class="del-dia-story">
+                    <p><strong>1. 獨一無二的包包 [ Del Día]</strong><br>
+                    Cotopaxi從創立開始並沒有自己的工廠，為了有讓整體的產品有好的品質，Cotopaxi 透過各樣的關係找到其他大品牌所使用的菲律賓工廠。創辦人參觀工廠時看到其他大品牌為了要切割出相同大小、相同規格、相同造型的布料來製作背包等產品，會製造出大量的廢棄碎布料。David 看到這些碎布料時心想，這些是很好的布料不應該被任意拋棄。因此他做了一個決策，要求當地工廠的裁縫運用這些碎布料製造獨一無二的背包。這些裁縫平均在這個工廠工作了11年半，他們是了不起的工匠和藝術家，但他們從未在創意過程中擁有發言權，他們從未被給予自己做出選擇的自由，他們只是被告知該縫什麼和如何縫，這就是他們必須做的。所以 David 對他們說，嘿，我們想給你們創意控制權，你們可以選擇任何你們想要的材料、任何顏色，只有一條規則，那就是不要製作相同的包。<br>
+                    於是 Cotopaxi 創造後背包系列 Del Día ，這個計劃不僅有助於保持良好材料不進入垃圾填埋場，還允許工廠裁縫發揮創意，從而產生完全獨一無二的背包。</p>
+                </div>
+
+                <div class="alpaca-story">
+                    <p><strong>2. 羊駝毛系列</strong><br>
+                    另一個例子是 Cotopaxi 的羊駝毛系列，Cotopaxi 利用來自玻利維亞高沙漠阿爾蒂普拉諾一些最偏遠地區養殖的羊駝的天然絕緣纖維。羊駝毛是中空的，輕便、自絕緣和低過敏性。Cotopaxi與當地社區緊密合作，以保護羊駝養殖傳統，並為通常一年收入不到100美元的農村小農戶創造市場通路（是的，那是一年）。並且Cotopaxi的羊駝毛毛衣是在美國募資平台kickstarter上（類似於台灣的嘖嘖）有史以來最受歡迎的毛衣。</p>
+                </div>
+
+                <div class="other-initiatives">
+                    <p><strong>3. 其他</strong></p>
+                    <ol>
+                        <li>雇用難民，Cotopaxi 與國際救援委員會合作，雇用了200名居住在猶他州鹽湖城公司總部附近的難民。這些難民，其中許多是女性，同時在每個訂單中夾入感謝卡。</li>
+
+                        <li>致力於碳中和、公平對待工人的工廠合作、採購具有永續性質的材料以及製造耐用的裝備。且承諾到2025年，所有的產品中使用回收、再利用或負責來源的材料。</li>
+                    </ol>
+                </div>
+
+                <h3>反思</h3>
+
+                <div class="inspirational-quote">
+                    <p>有一位知名的科技圈投資人說過，如果你沒有每天遭遇拒絕時，那很有可能你的目標並不夠具有野心（<strong>"If you aren't getting rejected on a daily basis, your goals aren't ambitious enough"</strong> Chris Dixon）。</p>
+                </div>
+
+                <p>David 的野心非常大，他想要創立一間會賺錢的企業，而這企業不僅是可以盈利，並且創立的第一天就是為了慈善目的而存在。過去的公司都是開始賺錢時或是賺大錢時才開始回饋社會（與其說回饋社會，不如說是為了抵稅）。</p>
+
+                <p>David 在一次訪談中，很激動的提到，We are doing good and we do well. 直翻就是我們做好事同時，我們也做得很好。</p>
+
+                <div class="personal-reflection">
+                    <p>這是一段讓人會感到激動的故事，因為這讓我看到一種不一樣的資本主義運作模式。創立第一天是為了慈善、永續存在時，也不代表就只能仰賴他人的善意捐獻存在，可以透過資本主義再造供應鏈，讓供應鏈的每個環節都可以具有人性、同時也可以發揮創意。購買的消費者也可以透過購買來為自己想要的未來投票，因為當他願意購買具有永續性的產品時，無疑是支持致力於永續、打倒貧窮的企業。</p>
+
+                    <p>過去一直覺得為富必須要不仁，雖然這句話仍然有些道理，但是也有可能限制了我們的想像。金錢和資本主義雖然帶來許多對世界的破壞、剝削窮人、製造階級對立等，但若成為一個好的馴獸師，或許也有可能透過資本主義為這破碎的世界帶來溫暖。</p>
+                </div>
+                <!-- YOUR ORIGINAL CONTENT ENDS HERE -->
+            </div>
+            
+            <!-- Optional: Article tags -->
+            <div class="article-tags">
+                <strong>標籤： </strong>
+                <a href="#" class="tag">決策與定位</a>
+                <a href="#" class="tag">Cotopaxi</a>
+                <a href="#" class="tag">社會企業</a>
+                <a href="#" class="tag">使命導向</a>
+                <a href="#" class="tag">永續發展</a>
+                <a href="#" class="tag">供應鏈創新</a>
+                <a href="#" class="tag">Del Día</a>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="../../zh-tw/" class="nav-link back-link">← 返回首頁</a>
+                <a href="../../zh-tw/articles.html" class="nav-link">所有文章</a>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 我的個人網站</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>決策與定位 #003 – 如果被診斷出癌症時，會留在現在的工作嗎？ - 我的個人網站</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        /* Article-specific styles */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .article-date {
+            color: #777;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .article-category {
+            color: #3498db;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .article-content {
+            line-height: 1.8;
+            color: #333;
+            font-family: 'PingFang TC', 'Microsoft JhengHei', 'SimHei', sans-serif;
+        }
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .article-content h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #34495e;
+            font-size: 1.4em;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        .article-content h3 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .article-content blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        .article-content blockquote p {
+            margin-bottom: 10px;
+        }
+        .article-content blockquote p:last-child {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: #2c3e50;
+            font-style: normal;
+        }
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .article-content li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .article-content a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+        .highlight-question {
+            background-color: #e8f6f3;
+            border-left: 4px solid #1abc9c;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-weight: 500;
+            border-radius: 0 5px 5px 0;
+        }
+        .key-point {
+            background-color: #fef9e7;
+            border: 1px solid #f39c12;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        .personal-reflection {
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+        }
+        .product-recommendation {
+            background-color: #e8f5e5;
+            border: 1px solid #28a745;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, #3498db, transparent);
+            margin: 30px 0;
+        }
+        .language-versions {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #28a745;
+        }
+        .language-versions strong {
+            color: #28a745;
+        }
+        .language-versions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .language-versions a:hover {
+            text-decoration: underline;
+        }
+        .article-tags {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #e0e0e0;
+        }
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .nav-link {
+            color: #3498db;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .back-link {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .navigation-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .language-versions a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="language-selector">
+                <a href="../../en/">English</a>
+                <a href="../../jp/">日本語</a>
+                <a href="../../zh-tw/" class="active">繁體中文</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="article-container">
+            <!-- Language version links -->
+            <div class="language-versions">
+                <strong>閱讀其他語言版本：</strong>
+                <a href="../en/article-003-cancer-decision.html">English</a>
+                <a href="../jp/article-003-cancer-decision.html">日本語</a>
+            </div>
+            
+            <div class="article-header">
+                <div class="article-category">決策與定位</div>
+                <h1>決策與定位 #003 – 如果被診斷出癌症時，會留在現在的工作嗎？</h1>
+                <div class="article-date">2023年11月22日</div>
+            </div>
+            
+            <div class="article-content">
+                <!-- YOUR ORIGINAL CONTENT STARTS HERE -->
+                <p>Hi 大家，今天想分享的是 Meta 全球事業集團總監 Nicola Mendelsohn 的罹癌後的決策。今天會有蠻多處直接摘要、整理 Nicola Mendelsohn 訪談的內容，因為這些故事很震撼也很有力量。</p>
+                
+                <p>至於最後會和大家分享也讓我一直在想的事，也是觸發我更進一步思考決策的原因。</p>
+                
+                <h3>Meta 全球事業集團總監 Nicola Mendelsohn 是誰？</h3>
+                
+                <p>以下簡稱她為Nicola。</p>
+                
+                <p>Nicola在加入 Facebook 之前，已在廣告行業工作了20多年，期間成為知名的英國廣告公司 Grey London 的副董事長，後續也成為廣告公司Karmarama 的合夥人和執行董事。 Nicola 同時也是信仰堅定的猶太人，每週固定和家人遵守猶太人的傳統。</p>
+                
+                <p>Meta 旗下的產品有 Facebook, Instagram, Whatsapp, Quest VR，目前市值達8000多億美金。Nicola 在 2013 年加入當時的 Facebook 時主要負責EMEA區域（歐洲、中東跟非洲）的事業總監，於 2023 年轉為全球區域事業總監。</p>
+                
+                <p>看起來Nicola的事業很順利地往上走。但中間出現了一大震盪。</p>
+                
+                <h3>2016被檢測出罹患血癌</h3>
+                
+                <blockquote>
+                    <p>" 2016年11月，我45歲，過著令人驚嘆的生活。到處飛行。孩子們正在茁壯成長、家庭狀況很好。我很忙，感覺很棒。我腹股溝處有一個小硬塊，很小，就像一顆豌豆那麼大。老實說，我本來不會想太多。但我有一個非常好的女性朋友，她是醫生。她摸了摸我，我從她的眼神中看出她並不樂觀。我問她是什麼問題。她說不知道，但你需要去看專業醫生。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <blockquote>
+                    <p>"我自己一個人去看醫生，因為我真的沒有想到會有什麼問題。我做了CT掃描後就回家了，那是星期五，我回到家就把手機放在一邊，忙著做其他事情。後來我拿起手機，看到這麼多未接來電，有來自我朋友這位醫生的，也有來自我不認識的0207號碼。我還記得那種感覺，就像是身體上的噁心。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <blockquote>
+                    <p>"我打電話給麗莎，我的家庭醫生朋友，她就住在附近。那是最漫長的五分鐘。她告訴我掃描顯示我全身到處都是腫瘤，遍佈我的胸部、腋下，到處都是。他們不知道那是什麼。這開始了我們生命中最糟糕的周末過程。上網搜索一切，試圖弄清楚，因為周末無法找到醫生。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <blockquote>
+                    <p>"作為一個習慣於知道自己想做什麼、掌控局面、讓事情發生的人，像你一樣，你什麼也做不了。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <blockquote>
+                    <p>"我被診斷出患有所謂的濾泡性淋巴瘤，這是一種不治之症的血癌。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <blockquote>
+                    <p>"我仍然無法相信這是發生在我身上且正在發生。從到處飛行、充滿各種挑戰、生活正常，然後突然就變了。我哭了很久、哭得很厲害。我記得那是一種很真實的身體感覺。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <h3>確定罹癌的第18個月開啟第一次的療程及那之後的事</h3>
+                
+                <blockquote>
+                    <p>"這種癌症非常不同，甚至前 18 個月沒有接受任何治療。因為醫生明白無法治癒它，且可能會有新的治療方法，所以他們需要觀察和等待。18個月後開始要進入治療階段，當時我有腎衰竭的風險，那是一個打擊。然後我接受了六個月的化療和18個月的免疫治療。這讓癌症進入了一種緩解的狀態。他們稱之為無病跡。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <blockquote>
+                    <p>"我們在 2018 年就在家門口有口罩和消毒液，供任何進來的人使用。我沒有去電影院。我沒有出門，沒有乘飛機等等。我必須非常非常小心，因為我的免疫系統被完全摧毀了。而我在 Covid-19 期間，雖然注射了疫苗，但疫苗對我而言並沒有功用。</p>
+                    <p>所以對我來言，封城或這些措施始終不會結束的。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <h3>為何還繼續在工作？</h3>
+                
+                <blockquote>
+                    <p>"有些人可能會認為，如果他們被診斷出來，他們可能會從工作中退縮，只待在家裡。或是決定終止很多事跟關係，花光所有的錢去拉斯維加斯。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <blockquote>
+                    <p>"這從來沒有出現在我的腦海中。我想我一直在我的生活中非常有意圖地關注對我來說重要的事情和我想要的事情。我熱愛我的工作。這是我很大一部分的身份認同。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <blockquote>
+                    <p>"我想盡可能保持一切正常，因為我對自己的生活感到非常幸福。如果我身體健康，我想工作。我一直很健康。即使在接受化療期間，我也能夠工作。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <blockquote>
+                    <p>"我永遠不會回到那個週末。所以我確保了通過我所做的事情，通過我可以控制的事情來保護自己，以此來獲得那種力量。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <blockquote>
+                    <p>"我控制了一些我能控制的事情，關於生活方式和飲食等方面。同時更有意圖的生活。"</p>
+                    <p>Nicola Mendelsohn</p>
+                </blockquote>
+                
+                <h3>如果是我的話，我會怎麼選擇？</h3>
+                
+                <div class="personal-reflection">
+                    <p>如果我得到一個癌症，這癌症不像是會立即惡化死亡的癌症，就像是 Nicola所罹患的濾泡性淋巴癌一樣。這濾泡性淋巴癌只要控制得當有高機率可以有超過 10 年餘命，也有甚至更長的餘命（雖然然而也有可能更短）。這就像身體裝上一個不定時炸彈，永遠無法把這不定時炸彈移除，也不知道這炸彈什麼時候會爆炸。</p>
+                </div>
+                
+                <p>這段期間我又聽見一位牧師（莊育銘）的故事，他說他兒子某天做了一個夢，有人帶他看他爸爸（就是莊育銘牧師）的一生故事，那一本書寫了莊育銘牧師在每一年完成的事，然而那本書只有到78頁，就沒有下一頁了。莊育銘牧師說這夢讓他更體悟生命的有限與短暫。</p>
+                
+                <p>聽完這兩個故事我一直在想，</p>
+                
+                <div class="highlight-question">
+                    <p>那我會繼續在現在的工作持續工作嗎？還是我會終止我現在的工作開始去從事那我真正想做的事？那我真正想做的事又是什麼？還是我會如何進行分配？我會選擇我現在的工作一天工作三天或四天，剩下的時間做我所謂真正重要的事嗎？如果現在的工作不是真正重要的事的話，那我為什麼還需要做呢？我對於我現在的工作有充分的熱愛嗎？</p>
+                </div>
+                
+                <p>其實這些問題我都沒有答案，而如果我認真思考我的生命如果只剩下十年、二十年時，我可能會做出不同的抉擇。<br>﻿所以，我持續做了調整跟嘗試。</p>
+                
+                <p>關於電子報發想了許久可以發展的主題，也寫了不少嘗試性的文章、影片，目前收斂到「決策與定位」的主題，並且以電子報為核心主軸。</p>
+                
+                <p>當然未來還有可能繼續調整跟嘗試，不過當我想到如果我的生命一直不斷在倒數時，就讓我認真面對這是不是我還想繼續做的事。</p>
+                
+                <p>如果你喜歡本期電子報的內容，<a href="https://hungkaichuang.com/">歡迎分享給朋友訂閱</a>。期待繼續和大家分享每個關於決策與定位的故事。</p>
+                
+                <div class="section-divider"></div>
+                
+                <div class="product-recommendation">
+                    <p><strong>BTW</strong> 今天提到生活與健康相關的主題，跟大家推薦一家我自己很愛的莓果專賣店，全部通過A肝檢驗！IQF(個別冷凍技術）不結塊、不生菌！可以直接食用、打果汁、烘焙、優格、冰淇淋都很適合。如果工作忙碌沒有時間切水果補充蔬果，我自己很愛希臘式優格加上這些莓果，地中海飲食吃起來！！</p>
+                    <p><a href="https://shope.ee/99y9OTXNAq">酸味十足大自然紅寶石-加拿大蔓越莓</a>：https://shope.ee/99y9OTXNAq</p>
+                    <p><a href="https://shope.ee/2L7pFk65n6">酸酸甜甜的黑鑽石-智利黑莓</a>：https://shope.ee/2L7pFk65n6</p>
+                    <p><a href="https://shope.ee/1VYiG7TM8q">甜甜微酸的花青素之王-中國產黑醋栗</a>：https://shope.ee/1VYiG7TM8q</p>
+                </div>
+                <!-- YOUR ORIGINAL CONTENT ENDS HERE -->
+            </div>
+            
+            <!-- Optional: Article tags -->
+            <div class="article-tags">
+                <strong>標籤： </strong>
+                <a href="#" class="tag">決策與定位</a>
+                <a href="#" class="tag">Meta</a>
+                <a href="#" class="tag">Nicola Mendelsohn</a>
+                <a href="#" class="tag">癌症</a>
+                <a href="#" class="tag">生命省思</a>
+                <a href="#" class="tag">工作意義</a>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="../../zh-tw/" class="nav-link back-link">← 返回首頁</a>
+                <a href="../../zh-tw/articles.html" class="nav-link">所有文章</a>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 我的個人網站</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>決策與定位#012-從思考「學生為甚麼想上大學？」開始，三千名學生變成十萬名學生的大學 - 我的個人網站</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        /* Article-specific styles */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .article-date {
+            color: #777;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .article-category {
+            color: #3498db;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .article-content {
+            line-height: 1.8;
+            color: #333;
+            font-family: 'PingFang TC', 'Microsoft JhengHei', 'SimHei', sans-serif;
+        }
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .article-content h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #34495e;
+            font-size: 1.4em;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        .article-content h3 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .article-content blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .article-content li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .article-content a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+        .intro-summary {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+            font-weight: 500;
+        }
+        .transformation-story {
+            background-color: #d4f4dd;
+            border: 2px solid #28a745;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .innovation-ranking {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .failing-university {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .key-question {
+            background-color: #fff8e7;
+            border: 3px solid #ff9500;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+        .positioning-insight {
+            background-color: #e2e3f0;
+            border-left: 4px solid #6f42c1;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .strategic-decisions {
+            background-color: #f0f8ff;
+            border: 2px solid #4169e1;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .decision-item {
+            background-color: #f8f9fa;
+            border-left: 3px solid #4169e1;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 3px 3px 0;
+        }
+        .personal-reflection {
+            background-color: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+        }
+        .criticism-section {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .defense-section {
+            background-color: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .final-reflection {
+            background-color: #e8f5e5;
+            border: 2px solid #28a745;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, #3498db, transparent);
+            margin: 30px 0;
+        }
+        .language-versions {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #28a745;
+        }
+        .language-versions strong {
+            color: #28a745;
+        }
+        .language-versions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .language-versions a:hover {
+            text-decoration: underline;
+        }
+        .article-tags {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #e0e0e0;
+        }
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .nav-link {
+            color: #3498db;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .back-link {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .navigation-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .language-versions a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="language-selector">
+                <a href="../../en/">English</a>
+                <a href="../../jp/">日本語</a>
+                <a href="../../zh-tw/" class="active">繁體中文</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="article-container">
+            <!-- Language version links -->
+            <div class="language-versions">
+                <strong>閱讀其他語言版本：</strong>
+                <a href="../en/article-012-colledge-positioning.html">English</a>
+                <a href="../jp/article-012-colledge-positioning.html">日本語</a>
+            </div>
+            
+            <div class="article-header">
+                <div class="article-category">決策與定位</div>
+                <h1>決策與定位#012-從思考「學生為甚麼想上大學？」開始，三千名學生變成十萬名學生的大學</h1>
+                <div class="article-date">2024年2月2日</div>
+            </div>
+            
+            <div class="article-content">
+                <!-- YOUR ORIGINAL CONTENT STARTS HERE -->
+                <p>今天的內容將會提到一間非營利的大學，如果透過發現其自身獨特的地位，透過「思考學生想要完成的任務」將自己從瀕臨破產關門的大學，變成全美擁有最多學生的大學也是最創新的大學。</p>
+
+                <div class="intro-summary">
+                    <p><strong>如果覺得本期內容有趣，歡迎將信件分享給你的朋友、邀請訂閱；若對過往期數感興趣，請 <a href="https://epwgwq.clicks.mlsend.com/te/cl/eyJ2Ijoie1wiYVwiOjY2NDY4OSxcImxcIjoxMTE4MTY2MzAwMDYxODgwMTYsXCJyXCI6MTExODE2NjMwMzcyMTQwOTYxfSIsInMiOiJkZDgwNWYyMGFiNDkyMGIzIn0">由此進入</a> 。<br>任何的點選、新增訂閱都會讓我充滿動力撰寫下一期電子報。如果有任何想回應的、想說的、想討論的回覆此封信件，我會好好閱讀的！</strong></p>
+                </div>
+
+                <h3>從三流的大學開始的旅程</h3>
+
+                <div class="innovation-ranking">
+                    <p>2912年美國知名商業雜誌&lt;Fast Company&gt;評選世界最具創新的50間公司的名單中，納入了唯一一間大學，這間大學排名第12位，<strong>排名在Tesla, Airbnb, LinkedIn前面</strong>，而他獲得的評語是「無止盡的再創造」、「在線上和線下不斷地重新定義高等教育」，這間大學不是知名的哈佛、耶魯、史丹佛、麻省理工等学校，而是聽起來像是野雞大學的<strong>南新罕布什爾大學（Southern New Hampshire University）</strong>。</p>
+                </div>
+
+                <div class="failing-university">
+                    <p>這間大學在美國可能屬於二線甚至是三線的大學，學生在2010年以前僅有三千名學生，且隨著美國2008年的金融海嘯、經濟衰退開始學生有逐漸變少的趨勢，而學校的收支僅僅處於剛好平衡的狀態，整間學校的活力跟前景似乎隨著2008年金融海嘯逐漸委靡。</p>
+
+                    <p>這間大學就是做為社區型的大學存在，主要招生對象就是當地的高中畢業生，並不會像美國知名大學如哈佛等等，從美國各地甚至是世界各地前來就讀。這樣的一間大學看起來就跟其他大學相同，將會因為少子化的關係逐漸凋零⋯⋯。</p>
+                </div>
+
+                <div class="transformation-story">
+                    <p><strong>但是就在2010年代開始，這間大學的學生成長率、學費收入都達雙位數，甚至一間非營利的大學年收入可接近 10 億美元。</strong></p>
+                </div>
+
+                <h3>定位：支持那些超過24歲以上的學生</h3>
+
+                <p>一間原本僅有容納約三千人的大學如何成為超過10萬學生的大學呢？因為其97%的學生都是線上學生。</p>
+
+                <div class="key-question">
+                    <p>南新罕布什爾大學（Southern New Hampshire University）校長的保羅勒布朗（Paul LeBlanc）一直在思考如何延續並且讓這間大學重生。保羅勒布朗從思考<strong>「學生為甚麼想上大學？」</strong>這個問題開始，因為當學生選擇就讀特定大學時是為了完成生活中的某個任務。<strong>學生希望在「某個特定的情境下」獲得進步，而這個情境是什麼呢？</strong>若可以協助學生在某個的定的情境獲得進步時，將會讓大學可以重新定位也招攬到更多且合適的學生。</p>
+                </div>
+
+                <div class="positioning-insight">
+                    <p>他看著大學內兩批學生，一批是高中應屆畢業生，沒有得到太好的答案，畢竟許多學生是按著學校排名決定大學。另外一批是提供給非應屆畢業生的線上課程。他發現這些非傳統的學生與高中應屆畢業生追求的目標截然不同。這群線上課程的學生<strong>平均年齡是30歲</strong>，他們過去因為種種原因沒有完成大學学業，需要提早就業，但是這群線上課程學生意識到必須取得大學學歷才能改善職場前景、改善家人和自己的生活。這群學生想要在平日有工作的情況下取得大學學歷，這是這群學生想要獲得的進步。</p>
+                </div>
+
+                <p>南新罕布什爾大學（Southern New Hampshire University）發現這批特別的在職進修的學生後，仔細一看才驚訝，原本他們的線上課程不是為著網路學習者設計（例如聲音、影像都不太精緻，收音並不好等等），但還是有在職進修的學生完成學業。於是南新罕布什爾大學全力且全心的投入線上教育的領域。所謂的全心投入，是他們重新設計入學流程，讓整體的入學到最終的畢業都是為著這批學生設計，這項定位牽涉到數項項決策，以下列出幾個特別的決策：</p>
+
+                <div class="strategic-decisions">
+                    <div class="decision-item">
+                        <p><strong>1. 十分鐘內回覆關於助學金問題</strong><br>
+                        過往大學回覆給高中畢業生的信件詢問往往需要等一星期才會正式回覆，畢竟這群臭高中生也沒有那麼急。但是對於白天上班的在職學生而言，他們並沒有大把的時間可以等待。所以他們會在接獲詢問十分鐘內，就打電話回覆，讓這群時間不寬裕的學生可以迅速回得回應。</p>
+                    </div>
+
+                    <div class="decision-item">
+                        <p><strong>2. 為在職求學新生安排個人顧問</strong><br>
+                        這群在職進修的學生面對上班、家庭的夾擊會遇見許多個人的生理或心理的問題，也因為這在職學生太久沒有進入課程中，對於課程學習、作業可能會產生各樣的困難。所以每位新生的個人顧問會特別關注學生是否有出現危機信號，例如上課前並沒有上傳作業、或是考試成績不理想時提供解決方法。以幫助在職進修的學生可以堅守學業。</p>
+                    </div>
+
+                    <div class="decision-item">
+                        <p><strong>3. 壓低線上課程學費</strong><br>
+                        這群在職進修的學生因為有工作、家庭等經濟壓力，所以對於預算相當敏感，縱使美國已相當習慣背著學貸且學校可以透過提高學费來增加收入，但學校仍堅持用相對便宜的價格來讓更多過去曾經因為經濟因素放棄學業或是對於高等教育有夢想的學生可以完成學業。</p>
+                    </div>
+                </div>
+
+                <div class="personal-reflection">
+                    <p>這間大學致力於線上課程的再設計，以我自己而言，白天有忙碌的工作，晚上花時間自行去拼湊出全部的資料，例如助學方案、學分計算相當困難，如果每一封詢問信件都要等到一星期後才能回覆時，這會讓我感到相當挫折。我甚至只想躺平，但這間大學將過往的行政流程打掉重練，以學生要完成的任務為導向重新再設計組織、流程、產品。</p>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>反思</h3>
+
+                <div class="criticism-section">
+                    <p>這間從三千人的大學轉變為13萬人的大學也引來一些質疑聲浪，例如南新罕布什爾大學從來沒有進過美國知名商業雜誌 &lt;Forbes&gt; 美國650所最佳大學的名單，且這間大學學士學位<strong>完成率為 48%，低於全美國大學平均的 60% 的比例</strong>。這間大學畢業生畢業後10年薪資中位數為45,400美元，相比鄰近的大學 51,400 美元，仍低於不少。這間大學的<strong>廣告預算佔整體預算的 20%</strong> ，也會大肆的透過全國性廣告進行宣傳，也引發不少人質疑這是一間學店負責販賣學歷。</p>
+                </div>
+
+                <div class="defense-section">
+                    <p>我想這些數據帶來的質疑都是確實的，但是這也是這間大學所處定位的獨特之處，對於一間致力於服務只有高中文憑的在職進修學生而言，學位完成率相對低、薪資中位數相對低都是可以理解的一件事。例如距離高中畢業已經 12 年的 30 歲工作世代，白天有一份工作下要能夠在有份全職工作下完成大學學士學位都是相當偉大的事蹟了。</p>
+                </div>
+
+                <div class="final-reflection">
+                    <p>這間大學可能無法培養出像是黃仁勳、蔡英文等等看起來学經歷非常顯赫的人物，這間大學也無法成為發哈佛、史丹佛般的超級學院大學，但是這間大學讓失學的青壯年工作世代，多了勇氣可以踏入並完成大學學業。這間大學找到其獨特的定位專心服務這群在職學生，讓他們重新可以進行學習、完成學業，至少接近提供正規大學的經驗，仍是相當相當偉大。</p>
+                </div>
+                <!-- YOUR ORIGINAL CONTENT ENDS HERE -->
+            </div>
+            
+            <!-- Optional: Article tags -->
+            <div class="article-tags">
+                <strong>標籤： </strong>
+                <a href="#" class="tag">決策與定位</a>
+                <a href="#" class="tag">南新罕布什爾大學</a>
+                <a href="#" class="tag">線上教育</a>
+                <a href="#" class="tag">在職進修</a>
+                <a href="#" class="tag">教育創新</a>
+                <a href="#" class="tag">非傳統學生</a>
+                <a href="#" class="tag">大學轉型</a>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="../../zh-tw/" class="nav-link back-link">← 返回首頁</a>
+                <a href="../../zh-tw/articles.html" class="nav-link">所有文章</a>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 我的個人網站</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

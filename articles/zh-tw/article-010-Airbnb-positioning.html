@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>決策與定位#010-Airbnb 沒有想像中那麼創新？談Airbnb的定位及業績驟降80%時的決策 - 我的個人網站</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        /* Article-specific styles */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .article-date {
+            color: #777;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .article-category {
+            color: #3498db;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .article-content {
+            line-height: 1.8;
+            color: #333;
+            font-family: 'PingFang TC', 'Microsoft JhengHei', 'SimHei', sans-serif;
+        }
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .article-content h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #34495e;
+            font-size: 1.4em;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        .article-content h3 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .article-content blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .article-content li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .article-content a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+        .intro-summary {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+            font-weight: 500;
+        }
+        .business-model-comparison {
+            background-color: #f8f9fa;
+            border: 2px solid #6c757d;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .marriott-stats {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .positioning-insight {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .positioning-story {
+            background-color: #e2e3f0;
+            border-left: 4px solid #6f42c1;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+        }
+        .covid-crisis {
+            background-color: #f8d7da;
+            border: 2px solid #dc3545;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .decision-section {
+            background-color: #fff8e7;
+            border-left: 4px solid #ff9500;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .decision-item {
+            background-color: #f0f8ff;
+            border: 1px solid #4169e1;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .analysis-section {
+            background-color: #e8f5e5;
+            border-left: 4px solid #28a745;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .mistake-highlight {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .positive-highlight {
+            background-color: #d1ecf1;
+            border: 1px solid #17a2b8;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .key-insight {
+            background-color: #f0f8ff;
+            border: 2px solid #4169e1;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, #3498db, transparent);
+            margin: 30px 0;
+        }
+        .language-versions {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #28a745;
+        }
+        .language-versions strong {
+            color: #28a745;
+        }
+        .language-versions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .language-versions a:hover {
+            text-decoration: underline;
+        }
+        .article-tags {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #e0e0e0;
+        }
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .nav-link {
+            color: #3498db;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .back-link {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .navigation-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .language-versions a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="language-selector">
+                <a href="../../en/">English</a>
+                <a href="../../jp/">日本語</a>
+                <a href="../../zh-tw/" class="active">繁體中文</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="article-container">
+            <!-- Language version links -->
+            <div class="language-versions">
+                <strong>閱讀其他語言版本：</strong>
+                <a href="../en/article-010-Airbnb-positioning.html">English</a>
+                <a href="../jp/article-010-Airbnb-positioning.html">日本語</a>
+            </div>
+            
+            <div class="article-header">
+                <div class="article-category">決策與定位</div>
+                <h1>決策與定位#010-Airbnb 沒有想像中那麼創新？談Airbnb的定位及業績驟降80%時的決策</h1>
+                <div class="article-date">2024年1月17日</div>
+            </div>
+            
+            <div class="article-content">
+                <!-- YOUR ORIGINAL CONTENT STARTS HERE -->
+                <p>Hi 大家早，好久不見。經歷過一週的休息後，又重新充滿了活力，今天這期是讓我覺得非常喜歡的題目。Airbnb的商業模式以及回顧Airbnb在疫情期間做了哪些特別的決策。</p>
+
+                <div class="intro-summary">
+                    <p><strong>如果覺得本期內容有趣，歡迎將信件分享給你的朋友、邀請訂閱；若對過往期數感興趣，請 <a href="https://hungkaichuang.com/category/decisionposition/">由此進入</a> 。<br>任何的點選、新增訂閱都會讓我充滿動力撰寫下一期電子報。</strong></p>
+                </div>
+
+                <h3>Airbnb 其實沒有想像的那麼創新？</h3>
+
+                <p>Airbnb 在2021年擁有600萬間房間，收入為59億美元。Airbnb 創立約為15年就可以達成此成就非常驚人。許多人認為Airbnb優勢在於不擁有、不租賃任何實體的房地產，因此是個輕型的、無資產、基於費用的輕型資產。</p>
+
+                <p>相對的酒店、飯店行業卻是傳統而行動緩慢的行業，需要購買土地、從零開始建造酒店等，需要相當大規模的投入，可能需要數十年才能夠投資打平。</p>
+
+                <p>事實上卻不是。我們從世界最大的萬豪集團Marriott談起。</p>
+
+                <div class="business-model-comparison">
+                    <div class="marriott-stats">
+                        <p><strong>2021年萬豪品牌在全球擁有150萬間房間，總收入為140億美元。</strong>在疫情之前萬豪每年的收入高達200億美元。這150萬間房間都是萬豪實際持有的嗎？<br><strong>事實上不是。</strong></p>
+
+                        <p>萬豪酒店集團實際上持有、擁有的房間僅有<strong>1.03%</strong>。其他房間是透過特許經營授權、提供管理服務等方式賺取費用。下圖截自<a href="https://marriott.gcs-web.com/static-files/b82978a6-9d28-4e38-9855-fc4ae2cebe11">萬豪集團的2022年報</a>。</p>
+                    </div>
+
+                    <img src="https://storage.mlcdn.com/account_image/664689/i735kk7WvD3Y6g5ihVFE7chemZ9UiZ3UJEKo5YkS.png" alt="萬豪集團資產配置圖表" />
+
+                    <p>如果以經營管理（managed）而言，萬豪集團會向不動產業主抽取一定比例的飯店收入作為管理費用，並且業績達到特定數額後還會再加上額外的分潤抽成。除此管理費用以外，萬豪集團還會要求不動產業主補償萬豪集團所支出的營運成本。</p>
+
+                    <p>如果以特許經營與授權安排（Franchaised/Licensed）而言，萬豪會向飯店業主（通常是飯店不動產的擁有者）收取申請費、品牌授權費，這些費用通常為該客房總收入4-7%，並且還需要將飯店內的餐飲收入2-3%支付給萬豪集團。</p>
+
+                    <p>Residential 部分更是特別，是萬豪集團透過授權品牌來協助銷售住宅房地產（通常與飯店聯合開發的住宅房地產），萬豪集團主要透過收取品牌授權費。而住宅房地產是由第三方業主進行建造並銷售。</p>
+
+                    <p>從上面三個類型的經營模式可以看出，萬豪集團實際參與不動產買賣、不動產建造的數量相當相當低，並非是萬豪集團的主要業務。萬豪集團的主要業務是透過品牌授權、飯店管理來賺取費用。萬豪集團從頭到尾就是以輕資產的方式進入飯店市場，這也是萬豪集團2022年的年報中提到的商業模式（asset-light business model）。</p>
+                </div>
+
+                <p>那麼對於Airbnb而言，沒有特別創新的商業模式下是如何在2023年取得將近一百億美金的營收呢？Airbnb有什麼獨特的定位嗎？</p>
+
+                <h3>Airbnb 定位：一個人的bug，是另外一個人的機會</h3>
+
+                <div class="positioning-story">
+                    <p>這故事從Airbnb 董事 Alfred Lin的父親說起，Alfred Lin提到他的父親是位銀行家負責於全球各地方進行擴張、開立分行，時常需要於世界各地出差。他的父親不管去到哪裡只會預定同一品牌的飯店，因為對他的父親而言，工作中已經出現太多變化、太多突發狀況，他回到飯店時不想要動腦，最好每個房間的吹風機都放在同樣的地方。他只想要一模一樣的房間在世界各地。</p>
+
+                    <p>然而，這樣的系統設定對於Airbnb的創辦人 Brian Chesky 而言，卻是一種應該被解決的問題。當他到義大利時他想要住在具有義大利風情的房間，當到日本時想要住在具有日式風格的房間。</p>
+                </div>
+
+                <div class="positioning-insight">
+                    <p><strong>Airbnb 雖然沒有特別創新的商業模式，但他找到一個特殊的定位。</strong></p>
+
+                    <p>他成功解決了遊客在旅遊中面臨的困境，注意是遊客，而不是商務旅客、不是時常需要出差的商務人士。Airbnb 提供了一種完全在地化、客製化的旅遊住宿體驗，不會再讓遊客住在均值化、統一的、沒有任何驚喜的房間。 Airbnb 成功找到他們的定位，提供給困頓的遊客一項驚喜、獨特且特別的體驗。</p>
+                </div>
+
+                <h3>疫情期間公司銳減80%收入下的決策</h3>
+
+                <div class="covid-crisis">
+                    <p>疫情開始前，Airbnb 於 2017 開始實現獲利，這給 Airbnb 相當大的信心，他們在舊金山建造非常時尚的公司總部，雇用數千名員工，並擴張公司的業務範圍，包含交通運輸、媒體等業務，公司的管理成本直接增加超過 100 %。然而進入 2020 年 3 月 11 日起美國總統 Donald Trump 宣布新的國際旅遊限制時，<strong>Airbnb的預訂率在數週間急速下降將近 80%。</strong></p>
+                </div>
+
+                <div class="decision-section">
+                    <div class="decision-item">
+                        <p><strong>決策一：裁員 25 %、高層減薪或不支領薪資</strong></p>
+
+                        <p>2020年5月5日 Airbnb 的CEO透過視訊會議哽咽地宣布裁員將近1/4的員工，行銷預算減少將近54%（至少10億美元），公司高層開始減薪或暫停支領薪水。<br>除了裁員以外，Airbnb 提供給被資遣的Airbnb員工14週的薪水＋1 年的健康保險。Airbnb 開費就職未滿一年的員工可領公司股票。<br>Airbnb也架設網站展示資遣員工的履歷，並且成立團隊專門協助資遣員工就業。</p>
+                    </div>
+
+                    <div class="decision-item">
+                        <p><strong>決策二：針對消費者全額退費</strong></p>
+
+                        <p>除了美國宣佈國際旅遊限制外，世界各國也都有其自己國家的旅遊禁令或是封城措施。許多使用 Airbnb 的消費者開始取消訂房，但都遇到一個問題：房東有合理理由不退款時（例如取消住宿為預定住宿的前一日本為無法基於退款政策要求退款的情況），Airbnb該如何做？<br>Airbnb 決定要求房東全額退款給所有因為旅遊限制無法住宿的消費者，無論這些消費者是在預定日前一日或是前一個月請求退款。</p>
+                    </div>
+
+                    <div class="decision-item">
+                        <p><strong>決策三：補助平台上房東</strong></p>
+
+                        <p>Airbnb要求房東退款給消費者後，換成房東開始跳腳、抗議。因Airbnb上有許多房東是專業房東，透過 Airbnb 的收日支應房屋貸款、生活開銷。疫情已導致房東的生意大受打擊，又加上退款給消費者時無疑是雙重打擊。<br>經過房東的反彈後，Airbnb 向房東道歉，答應向房東支付原本可收到款項的25%，並且建立一個1700 萬美元的抵押貸款基金，幫助房東支付房貸。</p>
+                    </div>
+
+                    <div class="decision-item">
+                        <p><strong>決策四：與投資者約定高利率的借款</strong></p>
+
+                        <p>Airbnb 頓失80%以上的收入且甚至當時還不知道疫情會持續多久，Airbnb為了支應前述費用向多名投資者借了10億美元，並且年利率為10%。這大低利時代是難以想像的高利率。但Airbnb還是決定要借用此費用作為支持公司、消費者與房東。這對於公司而言是一個賭注，賭一把公司經歷過疫情之後，將會再起，10億美元以及10%的利率將不會影響他們的營運。</p>
+                    </div>
+                </div>
+
+                <p>如果事後回顧這些決策時，可以發現一個錯誤，以及值得肯定之處</p>
+
+                <div class="analysis-section">
+                    <div class="mistake-highlight">
+                        <p><strong>一個錯誤：忽略平台上的房東</strong></p>
+                        <p>Airbnb 決定要求房東退款給消費者時忽略了Airbnb作為媒合房東與租客的雙邊市場不能僅僅討好其中一方（消費者）。因為當房東不願意提供房間給Airbnb時，Airbnb自然無法吸引到消費者》Airbnb雖然第一時間決定退款給消費者具有相當的勇氣，但忽略了房東也是Airbnb平台不可或缺的夥伴。</p>
+                    </div>
+
+                    <div class="positive-highlight">
+                        <p><strong>值得肯定之處：照顧員工、消費者與房東</strong></p>
+                        <p>Airbnb作為疫情衝擊的海嘯第一排，當全球第一次因為疫情旅遊業大受打擊時，並沒有人可以想到，後續Airbnb會因為居家上班（許多人會使用Airbnb定數個星期的房間，到各個城市居家上班）而再次業績暴衝。這時候Airbnb果斷裁員控制成本、同時又針對消費者、房東進行補貼，這讓在Airbnb平台中每一個作為人的角色都被照顧。Airbnb作為經營平台做了相當好的決策，安撫、支持與照顧每個在其中的角色，且勇敢的提供借款。</p>
+                    </div>
+                </div>
+                <!-- YOUR ORIGINAL CONTENT ENDS HERE -->
+            </div>
+            
+            <!-- Optional: Article tags -->
+            <div class="article-tags">
+                <strong>標籤： </strong>
+                <a href="#" class="tag">決策與定位</a>
+                <a href="#" class="tag">Airbnb</a>
+                <a href="#" class="tag">COVID-19</a>
+                <a href="#" class="tag">危機管理</a>
+                <a href="#" class="tag">商業模式</a>
+                <a href="#" class="tag">萬豪集團</a>
+                <a href="#" class="tag">平台經濟</a>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="../../zh-tw/" class="nav-link back-link">← 返回首頁</a>
+                <a href="../../zh-tw/articles.html" class="nav-link">所有文章</a>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 我的個人網站</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

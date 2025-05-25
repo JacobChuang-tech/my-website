@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>決策與定位#006-你將會得到你所期待的觀眾-Acquired podcast - 我的個人網站</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        /* Article-specific styles */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .article-date {
+            color: #777;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .article-category {
+            color: #3498db;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .article-content {
+            line-height: 1.8;
+            color: #333;
+            font-family: 'PingFang TC', 'Microsoft JhengHei', 'SimHei', sans-serif;
+        }
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .article-content h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #34495e;
+            font-size: 1.4em;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        .article-content h3 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .article-content blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .article-content li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .article-content a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+        .intro-summary {
+            background-color: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+            font-weight: 500;
+        }
+        .acquired-background {
+            background-color: #f8f9fa;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            border-left: 4px solid #6c757d;
+        }
+        .achievement-stats {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        .positioning-quote {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            font-style: italic;
+            font-size: 1.05em;
+            text-align: center;
+        }
+        .strategy-section {
+            background-color: #e2e3f0;
+            border-left: 4px solid #6f42c1;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .bezos-quote {
+            background-color: #fff8e7;
+            border: 2px solid #ff9500;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .personal-reflection {
+            background-color: #f0f8ff;
+            border-left: 4px solid #4169e1;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+        }
+        .highlight-question {
+            background-color: #e8f6f3;
+            border-left: 4px solid #1abc9c;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-weight: 500;
+            border-radius: 0 5px 5px 0;
+        }
+        .key-point {
+            background-color: #fef9e7;
+            border: 1px solid #f39c12;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, #3498db, transparent);
+            margin: 30px 0;
+        }
+        .language-versions {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #28a745;
+        }
+        .language-versions strong {
+            color: #28a745;
+        }
+        .language-versions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .language-versions a:hover {
+            text-decoration: underline;
+        }
+        .article-tags {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #e0e0e0;
+        }
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .nav-link {
+            color: #3498db;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .back-link {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .navigation-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .language-versions a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="language-selector">
+                <a href="../../en/">English</a>
+                <a href="../../jp/">日本語</a>
+                <a href="../../zh-tw/" class="active">繁體中文</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="article-container">
+            <!-- Language version links -->
+            <div class="language-versions">
+                <strong>閱讀其他語言版本：</strong>
+                <a href="../en/article-006-acquired-decision.html">English</a>
+                <a href="../jp/article-006-acquired-decision.html">日本語</a>
+            </div>
+            
+            <div class="article-header">
+                <div class="article-category">決策與定位</div>
+                <h1>決策與定位#006-你將會得到你所期待的觀眾-Acquired podcast</h1>
+                <div class="article-date">2023年12月12日</div>
+            </div>
+            
+            <div class="article-content">
+                <!-- YOUR ORIGINAL CONTENT STARTS HERE -->
+                <p>Hi 大家早</p>
+
+                <div class="intro-summary">
+                    <p><strong>上期跟大家分享了其實定位就表示著「你以一種與他人不同的方式看待世界，而你看到了你認為的機會」，並從NVIDIA創辦人黃仁勳的演講和Google Earth的前身Keyhole來談起。<br>本期內容將從美國科技類相當知名、矽谷圈無人不知的Podcast- Acquired 他們的策略與定位談起，去看你將會得到你所期待的觀眾。<br>如果覺得本期內容有趣，歡迎將信件分享給你的朋友、邀請訂閱；若對過往期數感興趣，請 <a href="https://hungkaichuang.com/category/decisionposition/">由此進入</a>。任何的點選、新增訂閱都會讓我充滿動力撰寫下一期電子報。</strong></p>
+                </div>
+
+                <p>雖然寄出電子報的時候是深夜，我還是習慣跟大家說聲早安，想像大家隔天一早打開信箱收到電子報的情景。還是說有許多朋友為了第一時間收到電子報而熬夜晚睡呢？（想太多哈）</p>
+
+                <p>不曉得大家是怎麼度過每天的通勤時刻，我會一邊開車一邊收聽Podcast（線上廣播節目），吸收新知。這次的主題「打造你期待的觀眾」，要介紹的是一部我很喜歡的英文Podcast（線上廣播節目）頻道 [ Acquired ] ，我將分享他們如何找到自己產品定位，吸引到他們想要的閱聽眾。</p>
+
+                <div class="key-point">
+                    <p><strong>你將會得到你所期待的觀眾並不是一種新世紀運動（new age）或是任何心想事成的說明，而是你的策略、你的定位將會為吸引到適合你的觀眾。</strong></p>
+                </div>
+
+                <h3>Acquired的背景與成就</h3>
+
+                <div class="acquired-background">
+                    <p>[ Acquired ]是2015年底時由兩位男性主持人主持的podcast節目，每月大約出產2-3集 podcast 節目（就是線上廣播節目啦），每一集節目平均約2-3小時。甚至還有曾經出現4小時以上的節目內容！這是相當長的節目。<br>目前大多數以上的節目會在1小時以內（最多不超過90分鐘），畢竟人的注意力有限，而且多數podcast就是設計給通勤人士或是做家事等閒暇時間可聽。且大多數的節目會追求穩定更新，每週固定時間至少更新一集，但是[ Acquired ]卻反其道而行，並非每週固定更新，卻每次更新都長達數小時。就可以知道他們的存在是多麽的怪異了吧。</p>
+                </div>
+
+                <p>「Every company has a story.」是貫徹這節目的主旨，Acquired會在各個集數中相當詳盡的介紹一間公司大大小小故事，非常有邏輯且重視時間序跟因果的介紹，最終附上他們對於該公司的分析。常聽見的公司他們多數都涵蓋了，像是Nike(總長4:03:28)、VISA(總長3:43:24)、Costco(總長3:01:33)、NVIDIA(分成三集，每集都超過2小時)、任天堂（總長3:17:29）、台積電（總長2:32:36）等等。</p>
+
+                <p>除此之外，這節目還可以邀請到NVIDIA的執行長黃仁勳、Uber CEO、Spotify CEO、Zoom CEO來進行訪談，這些 CEO 大概是美國科技界的好萊塢巨星！</p>
+
+                <p>從一開始 [ Acquired ] 就走了相當不同的路，跟其他的Podcast非常不同，那他們達成什麼成就呢？</p>
+
+                <div class="achievement-stats">
+                    <ol>
+                        <li><strong>每級平均180天的下載量可達30萬次</strong><br>
+                        雖然對比於任何知名的Youtube節目，這次數可能相當相當少。但如果認真思考這麼長的節目，每集平均180天下載量達30萬次！這個數字相當值得令人驚艷，因為這節目中沒有任何刺激、血腥、色情、瘋狂，甚至沒有任何畫面，還可以達到這麼高的下載量！</li>
+
+                        <li><strong>幾乎每年成長都是前一年的兩倍</strong><br>
+                        以下的圖是[ Acquired ]主持人在X（推特）上面Po出來的，每一年的成長都幾乎是前一年的兩倍！</li>
+
+                        <li><strong>高品質的聽眾</strong><br>
+                        [ Acquired ]的聽眾中有40%是C級（就是CEO, CFO, COO或是任何C開頭O結尾的ＯＯ長）或VP級高管（副總等級）。23%是現任公司創辦人，12%是前創辦人（已經把公司賣掉、出場賺一大票錢的有錢人）。如果按職業劃分，17%是工程師，15%是現任CEO，12%是產品經理。</li>
+                    </ol>
+                </div>
+
+                <img src="https://storage.mlcdn.com/account_image/664689/QElo2l1Cxjv0juyruwlW2H2VbOWNew5jhTdassYH.jpg" alt="Acquired podcast 成長圖表" />
+
+                <h3>定位：我們並不想要數百萬的聽眾，我們要的是……</h3>
+
+                <div class="positioning-quote">
+                    <p>[ Acquired ]為了他們自己以及像他們的聽眾製作節目，一群像他們一樣想了解公司成長、策略、故事的人。他們也不想要有數百萬的聽眾，因為根本不會有這麼多人對於他們的主題產生興趣。</p>
+                </div>
+
+                <p>[ Acquired ]在採訪時提到，我們不追求[ Acquired ]快速增長，即使是成長緩慢，我們也不在意。我們只希望在我們追求的市場中獲得增長。因為像[ Acquired ]的這群人是世界上最有價值的聽眾，這就是[ Acquired ]追求的聽眾。而其中一位主持人具體的描述他的聽眾：「我認為我們的聽眾是像我們一樣的人——在商業上受過高等教育。非常聰明。不喜歡事情被簡化，對事情被簡化相當反感。並且市面上90%的商業內容對我們的聽眾來說毫無價值。我們的聽眾積極地想要學習、進步、成長，並建立偉大的事物。」</p>
+
+                <h3>策略：專注</h3>
+
+                <p>如果你想達成以上的目標，那你的策略是什麼？</p>
+
+                <div class="strategy-section">
+                    <p><strong>1. 能夠快速得到迴響的Youtube影音或是Tiktok短影音嗎？</strong><br>
+                    <strong>答案不是</strong><br>
+                    [ Acquired ]在訪談中提到：「我們在YouTube、TikTok、Twitter表現都很掙扎。我們在這些平台上並不擅長，也無法創造任何病毒式的傳播或病毒式的爆發。雖然我們會剪出一些節目中的精彩短影音上Youtube或是TIKTOK，但表現仍然掙扎。因為我們一開始就不是這樣設計節目。」</p>
+
+                    <p><strong>2. 專注於長期增長、專注於製作的內容</strong><br>
+                    [ Acquired ]每一集主持人預備的時間可能長達100小時，他們閱讀市面上的每一筆資料，無論是紙本、影像、訪談，他們希望達到的目標是，當有人質疑說沒有準備完整時，他們可以非常直截了當的說「不，我已經看完所有資料了。」<br>
+                    這類專注於成長的podcast自然而然就不會去炒作任何熱門的議題、當下的新聞、選舉、政治、不炒作種族、性別、或是也不提任何腥羶色、沒有營養的內容，不製造任何炎上的話題，不透過製造爭議來變得紅或熱門。這並不是說Podcast或是Youtuber不能拍攝這類的影片，而是目標與策略的不同。當定位是找出這群有價值的聽眾，自然策略就要符合這定位。而不是看著短影音很紅就製作短影音，或是用短影音、或影片的邏輯來製作podcast（每三分鐘就要有一個爆點、特效等）</p>
+                </div>
+
+                <div class="bezos-quote">
+                    <p>[ Acquired ]在一場演講中提到，他們效法貝佐斯的精神，「如果你不在我的巴士上，就下車。（if you're not on my bus, get off ! ）」貝佐斯堅持將賺到的每一分錢再投資，所以亞馬遜從很早期開始就決定即使盈利不配發股利！台灣存股族而言最重視的股利，亞馬遜超過20年都不發放，堅持將賺到的每一分錢繼續的投資、擴大優勢，並且跟股東說，這就是我們的做法。</p>
+                </div>
+
+                <h3>反思</h3>
+
+                <div class="personal-reflection">
+                    <p>定位與策略會吸引你所期待的聽眾。</p>
+
+                    <p>如果策略是炒作最新的話題、最爭議的內容、講話刻意辛辣，那麽吸引到的就是偏向只會隨著最新話題、最熱門話題起舞的觀眾，無法吸引到認真思索事物的觀眾。這像是對我的當頭棒喝，需要認真思考每一步，我是想要換得百萬觀眾，還是我像是[ Acquired ]一樣獲得這些觀眾呢？那我要因此採取哪些策略呢？</p>
+                </div>
+
+                <div class="highlight-question">
+                    <p><strong>那你呢？你是怎麼看自己的定位跟策略呢？歡迎跟我分享！</strong></p>
+                </div>
+                <!-- YOUR ORIGINAL CONTENT ENDS HERE -->
+            </div>
+            
+            <!-- Optional: Article tags -->
+            <div class="article-tags">
+                <strong>標籤： </strong>
+                <a href="#" class="tag">決策與定位</a>
+                <a href="#" class="tag">Acquired Podcast</a>
+                <a href="#" class="tag">內容策略</a>
+                <a href="#" class="tag">目標受眾</a>
+                <a href="#" class="tag">長期成長</a>
+                <a href="#" class="tag">專注策略</a>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="../../zh-tw/" class="nav-link back-link">← 返回首頁</a>
+                <a href="../../zh-tw/articles.html" class="nav-link">所有文章</a>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 我的個人網站</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

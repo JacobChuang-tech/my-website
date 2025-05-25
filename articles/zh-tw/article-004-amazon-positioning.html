@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>決策與定位 #004-Amazon 立志決定成為向客戶收取更少費用的公司 - 我的個人網站</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        /* Article-specific styles */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .article-date {
+            color: #777;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .article-category {
+            color: #3498db;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .article-content {
+            line-height: 1.8;
+            color: #333;
+            font-family: 'PingFang TC', 'Microsoft JhengHei', 'SimHei', sans-serif;
+        }
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .article-content h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #34495e;
+            font-size: 1.4em;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        .article-content h3 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .article-content blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        .article-content blockquote p {
+            margin-bottom: 10px;
+        }
+        .article-content blockquote p:last-child {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: #2c3e50;
+            font-style: normal;
+        }
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .article-content li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .article-content a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+        .highlight-question {
+            background-color: #e8f6f3;
+            border-left: 4px solid #1abc9c;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-weight: 500;
+            border-radius: 0 5px 5px 0;
+        }
+        .key-point {
+            background-color: #fef9e7;
+            border: 1px solid #f39c12;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        .bezos-quote {
+            background-color: #fff8e7;
+            border: 2px solid #ff9500;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        .flywheel-section {
+            background-color: #f8f9fa;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            border-left: 4px solid #28a745;
+        }
+        .product-recommendation {
+            background-color: #e8f5e5;
+            border: 1px solid #28a745;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        .reflection-section {
+            background-color: #f0f8ff;
+            border-left: 4px solid #4169e1;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, #3498db, transparent);
+            margin: 30px 0;
+        }
+        .language-versions {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #28a745;
+        }
+        .language-versions strong {
+            color: #28a745;
+        }
+        .language-versions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .language-versions a:hover {
+            text-decoration: underline;
+        }
+        .article-tags {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #e0e0e0;
+        }
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .nav-link {
+            color: #3498db;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .back-link {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .navigation-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .language-versions a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="language-selector">
+                <a href="../../en/">English</a>
+                <a href="../../jp/">日本語</a>
+                <a href="../../zh-tw/" class="active">繁體中文</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="article-container">
+            <!-- Language version links -->
+            <div class="language-versions">
+                <strong>閱讀其他語言版本：</strong>
+                <a href="../en/article-004-amazon-positioning.html">English</a>
+                <a href="../jp/article-004-amazon-positioning.html">日本語</a>
+            </div>
+            
+            <div class="article-header">
+                <div class="article-category">決策與定位</div>
+                <h1>決策與定位 #004-Amazon 立志決定成為向客戶收取更少費用的公司</h1>
+                <div class="article-date">2023年11月30日</div>
+            </div>
+            
+            <div class="article-content">
+                <!-- YOUR ORIGINAL CONTENT STARTS HERE -->
+                <p>Hi 大家早，</p>
+                
+                <p>電子報已經進入了第四期，一切看起來好像有上軌道，哈不過還是要等到第五十期才能說已經正式上了軌道。電子報的主題在討論【決策與定位】，預計會分析各類的決策與各式各樣的定位去幫助我們自己做出好的決策，也找到自己好的定位。</p>
+                
+                <p>這一期要談亞馬遜如何致力成為向客戶收取最少費用的決策與定位。</p>
+                
+                <h3>背景早期亞馬遜=虧錢的亞馬遜</h3>
+                
+                <p>亞馬遜公司是一家總部位於美國西雅圖的跨國電子商務企業，是全球最大的網際網路線上零售商之一、目前全美市值排名前五大。每一季度營業利益幾乎都達百億美元水準的Amazon，在 1997年上市以來至2002年度前都未能實現獲利皆處於虧損狀態。就在連年虧損時，北佐斯喝了一杯咖啡讓亞馬遜的未來從此產生改變。</p>
+                
+                <h3>一杯咖啡後的決定</h3>
+                
+                <p>2001年Amazon正值相當淒慘的階段，網路泡沫破滅、市場資金縮減、人員過剩和擴張過度，成長衰退，股價正在經歷一波的下跌，亞馬遜遲遲無法盈利，公司正受到相當巨大的壓力，而貝佐斯及公司正準備計畫將亞馬遜上的產品提高價格以讓公司可以盈利。<br>然而貝佐斯在喝完一杯咖啡之後隨即改變心意。</p>
+                
+                <p>2001年某個星期六的上午，貝佐斯與Costco創辦人 James Sinegal 與Jeff Bezos約在星巴克聊天，Costco創辦人與 Jeff Bezos 說明Costco背後的哲學。在那杯咖啡之後，貝佐斯回到亞馬遜辦公室宣布。</p>
+                
+                <div class="bezos-quote">
+                    <p><strong>There are 2 types companies in the world. Companies that work hard to charge you more and companies that work hard to charge you less. Henceforth, as of today, Amazon is the company that works hard to charge its customer less.</strong></p>
+                    <p style="margin-top: 15px; font-style: italic;">Jeff Bezos</p>
+                </div>
+                
+                <p><strong>世界上有兩種公司。有一種公司千方百計設法從顧客身上收取更多費用；有一種公司絞盡腦汁從顧客身上收取更少費用。而亞馬遜是屬於後者。</strong></p>
+                
+                <p>亞馬遜從此之後就致力於提供顧客最大的價值，收取最少的費用，讓顧客真實感受到他們的每一分錢都創造了最大價值。</p>
+                
+                <p>這一決策看起來是一句幹話、一句冠冕堂皇的話，但其實影響亞馬遜的策略相當深遠。就在跟Costco創辦人早餐會後，當時候亞馬遜仍在虧損中還看不見營利的希望時，就決定立刻將書籍、光碟等降價20%以上。且同時亞馬遜也開放第三方賣家使用亞馬遜平台，所謂的第三方賣家就是邀請其他公司在亞馬遜平臺上銷售其產品，這讓亞馬遜網站中有亞馬遜自身的商品也有外部公司的商品，這讓外部公司在自己的地盤上與他們競爭。 且在2002年亞馬遜開放以「自助式訂單配送」（Self-Service Order Fulfillment）讓第三方賣家把他們的貨品運送至亞馬遜的倉庫，讓亞馬遜代為倉儲及出貨給顧客。這些第三方公司仍然是存貨的所有人，也可以自訂價格，同時又可以跟亞馬遜自有商品進行競爭。</p>
+                
+                <p>然而，亞馬遜有消化存貨的壓力，但是同時又開放第三方賣家販售與亞馬遜相同的商品，甚至，又將倉儲物流系統開放給第三方賣家，讓第三方賣家可以減少運輸、倉儲成本並在亞馬遜平台上降價，迫使亞馬遜消化存貨壓力更大，迫使亞馬遜必須降價來消化存貨壓力。</p>
+                
+                <h3>亞馬遜飛輪</h3>
+                
+                <p>亞馬遜開放倉儲給第三方賣家的作法看起來是一團糨糊，但如果從絞盡腦汁賣顧客便宜一點，這看起來就相當有邏輯。因為亞馬遜跟其他第三方賣家競爭時，將會迫使亞馬遜自身需要降價，所有第三方廠商都在降價的同時，確實達到絞盡腦汁賣便宜一點的結果。</p>
+                
+                <p>問題在於：絞盡腦汁賣便宜一點要如何亞馬遜如何賺錢生存呢？關鍵在以下的亞馬遜飛輪效應。</p>
+                
+                <div class="flywheel-section">
+                    <p><strong>亞馬遜飛輪效應：</strong></p>
+                    <p>＊亞馬遜的低價提升更多的銷售額</p>
+                    <p>->更多的銷售額激發更多第三方賣家上架更多產品</p>
+                    <p>→亞馬遜向第三方賣價收取更多佣金</p>
+                    <p>->更多的收入跟更多的佣金，可以讓亞馬遜再壓低價格、投資物流</p>
+                    <p>->更低的價格Prime會員忠誠度將提升更多的銷售額 ->不斷循環。。。</p>
+                </div>
+                
+                <img src="https://storage.mlcdn.com/account_image/664689/gjcazxTQSpDlBQq8aZj4IO4Ih9F5iG1dlAV20yqP.png" alt="亞馬遜飛輪效應圖表" />
+                
+                <p>只要這飛輪不斷轉下去就可以讓亞馬遜持續的增長、獲得更大的利潤。所以如果看到下表亞馬遜的利潤成長（這包含亞馬遜其他的投資合併計算），就會看到亞馬遜飛輪轉起來時帶來的效益。</p>
+                
+                <img src="https://storage.mlcdn.com/account_image/664689/WYZT5pKdlg0NtJsBNxpnTV9rmtBu40lZSe9UX9ui.png" alt="亞馬遜利潤成長圖表" />
+                
+                <h3>反思</h3>
+                
+                <div class="reflection-section">
+                    <p>亞馬遜選擇了「絞盡腦汁從顧客身上收取更少費用」時，看起來相當反直覺，但也只有想到絞盡腦汁賣便宜一點時，才能創造出新的商業模型。貝佐斯在2000年初期時並沒有認真思考亞馬遜要如何增長，要如何建立起商業模型、盈利方法，而是單純以傳統思維去參與零售業的戰爭，提高商品價格。<br>如果貝佐斯在當時沒有跟好市多的創辦人一起吃早餐，很有可能亞馬遜並沒有現在的成就。但是就在於亞馬遜「以跟顧客收取最少費用」的定位去思考決策時，亞馬遜就從此改變了許多。</p>
+                </div>
+                
+                <p>亞馬遜Prime會員（每月14.99美元或每年139美元）除了可以享受快速到貨服務外、還可以享受線上影片串流、音樂服務、遊戲、每月免費閱讀電子書。對於顧客而言他們可以用花最少的錢獲得最多的服務、有最大的價值，誰想得到線上購物平台居然可以為他的會員提供影音串流、電子書、音樂、遊戲等等。如果顧客分開向不同的服務商訂閱影音、音樂等等總和費用顯然比亞馬遜的會員高上許多。這也是一種絞盡腦汁從顧客身上收取更少費用，提供更多價值的案例。</p>
+                
+                <p>亞馬遜一直以來相對於矽谷或是其他科技公司都是屬於相對節儉的公司，節儉可能是比較溫和的講法，更直接的說法是血汗工廠，時不時傳出亞馬遜如何透過科技方式壓榨物流中心員工相關新聞。亞馬遜成為血汗工廠的原因也是因為，極力想壓低成本來達成亞馬遜飛輪。這是否是項好的決定，或者是否一定要透過壓榨員工才有辦法達成亞馬遜飛輪？這些都值得進一步深入探討。但是，亞馬遜至少透過他的定位呈現了一種新的商業模式，也創造了某種的成功。</p>
+                
+                <div class="highlight-question">
+                    <p><strong>反思：我的公司、我的職業生涯是否可以應用亞馬遜飛輪？還是我可以有不同的飛輪？</strong></p>
+                </div>
+                
+                <div class="section-divider"></div>
+                
+                <div class="product-recommendation">
+                    <p>除了亞馬遜的致力於便宜販售商品以外，也有一種是致力於提供價值然後讓顧客心服口服的用高價購買。<strong>彌菓migoo</strong>極濃黃金乳酪絲號稱是乳酪絲界的愛馬仕，此產品被我所認識的饕客肯定，想一嚐愛馬仕風味的可以買他們家的乳酪絲。</p>
+                    
+                    <p><a href="https://shope.ee/30NhHt7wun">﻿原味單包裝</a>：https://shope.ee/30NhHt7wun</p>
+                    <p><a href="https://shope.ee/VgMJKpmte">﻿蜂蜜單包裝</a>：https://shope.ee/VgMJKpmte</p>
+                    <p><a href="https://shope.ee/8f242Mp5l2">﻿辣味單包裝</a>：https://shope.ee/8f242Mp5l2</p>
+                    <p><a href="https://shope.ee/5phsfBUGwS">﻿三包裝</a>：https://shope.ee/5phsfBUGwS</p>
+                </div>
+                <!-- YOUR ORIGINAL CONTENT ENDS HERE -->
+            </div>
+            
+            <!-- Optional: Article tags -->
+            <div class="article-tags">
+                <strong>標籤： </strong>
+                <a href="#" class="tag">決策與定位</a>
+                <a href="#" class="tag">Amazon</a>
+                <a href="#" class="tag">Jeff Bezos</a>
+                <a href="#" class="tag">商業策略</a>
+                <a href="#" class="tag">飛輪效應</a>
+                <a href="#" class="tag">定價策略</a>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="../../zh-tw/" class="nav-link back-link">← 返回首頁</a>
+                <a href="../../zh-tw/articles.html" class="nav-link">所有文章</a>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 我的個人網站</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

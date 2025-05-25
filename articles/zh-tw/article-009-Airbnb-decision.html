@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>決策與定位#009-Airbnb 做那些無法規模化的事來讓100個人愛上你 - 我的個人網站</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        /* Article-specific styles */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .article-date {
+            color: #777;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .article-category {
+            color: #3498db;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .article-content {
+            line-height: 1.8;
+            color: #333;
+            font-family: 'PingFang TC', 'Microsoft JhengHei', 'SimHei', sans-serif;
+        }
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .article-content h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #34495e;
+            font-size: 1.4em;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        .article-content h3 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .article-content blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .article-content li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .article-content a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+        .paul-graham-quote {
+            background-color: #f0f8ff;
+            border: 2px solid #4169e1;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        .airbnb-background {
+            background-color: #fff0f5;
+            border-left: 4px solid #ff69b4;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .strategy-section {
+            background-color: #f8f9fa;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            border-left: 4px solid #6c757d;
+        }
+        .strategy-item {
+            background-color: #e8f4f8;
+            border-left: 4px solid #17a2b8;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .star-rating-system {
+            background-color: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+        }
+        .star-examples {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 3px solid #ffc107;
+        }
+        .no-magic-section {
+            background-color: #d4edda;
+            border: 2px solid #28a745;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+        .personal-reflection {
+            background-color: #e2e3f0;
+            border-left: 4px solid #6f42c1;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+        }
+        .key-insight {
+            background-color: #fff8e7;
+            border: 2px solid #ff9500;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+        .highlight-question {
+            background-color: #e8f6f3;
+            border-left: 4px solid #1abc9c;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-weight: 500;
+            border-radius: 0 5px 5px 0;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, #3498db, transparent);
+            margin: 30px 0;
+        }
+        .language-versions {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #28a745;
+        }
+        .language-versions strong {
+            color: #28a745;
+        }
+        .language-versions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .language-versions a:hover {
+            text-decoration: underline;
+        }
+        .article-tags {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #e0e0e0;
+        }
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .nav-link {
+            color: #3498db;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .back-link {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .navigation-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .language-versions a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="language-selector">
+                <a href="../../en/">English</a>
+                <a href="../../jp/">日本語</a>
+                <a href="../../zh-tw/" class="active">繁體中文</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="article-container">
+            <!-- Language version links -->
+            <div class="language-versions">
+                <strong>閱讀其他語言版本：</strong>
+                <a href="../en/article-009-Airbnb-decision.html">English</a>
+                <a href="../jp/article-009-Airbnb-decision.html">日本語</a>
+            </div>
+            
+            <div class="article-header">
+                <div class="article-category">決策與定位</div>
+                <h1>決策與定位#009-Airbnb 做那些無法規模化的事來讓100個人愛上你</h1>
+                <div class="article-date">2024年1月3日</div>
+            </div>
+            
+            <div class="article-content">
+                <!-- YOUR ORIGINAL CONTENT STARTS HERE -->
+                <div class="paul-graham-quote">
+                    <p>Paul Graham（被封為矽谷創業之父） 鼓勵新創公司時有一句話非常的著名，<strong>"Do things that don't scale"（做那些無法規模化的事情）</strong>。</p>
+                </div>
+
+                <p>這句話的背景在於許多新創公司的創辦人一開始就想做那些可以有效率且可以規模化的事情。例如，公司新成立時為了要獲取用戶，想到的第一個做法就是買網路廣告、找網紅業配、臉書或是社群平台下廣告，因為這是最快而且是可以快速規模化的方式。臉書貼文可以用500元就可以買到曝光、甚至是用戶，是最有效力也最可以規模化的一件事。但是 Paul Graham 建議，最好的方法是創辦人自己去開拓顧客、自己去找到顧客，這雖然是最慢的方式，也是最無法規模化的方式，畢竟創辦人一天時間有限、能接觸的人有限、能推廣的範圍有限，無法快速成長跟複製，但是 Paul Graham 認為這就是新創應該做的事，就是做無法規模化的事。</p>
+
+                <div class="airbnb-background">
+                    <p>而這個最好的例子就是 Airbnb ，這是世界知名的房屋共享平台，這平台讓房東將空閒房間、房屋放上平台出租。 Airbnb 上面有農舍、古堡、海邊小屋、山中樹屋，也有在城市中常見的套房，過去甚至曾經有政大的學生把學校宿舍床位放上 Airbnb 出租。</p>
+
+                    <p>Airbnb 現在市值約為 800 億美金，每季創造營收可以達數十億美金。然而，Airbnb一開始啟動時，經歷了許多困難。沒有人願意投資他們，只能靠著自己設計的麥片早餐來資助Airbnb的事業。而在Airbnb爬到現在的位置前，他們做了許多努力，如果把這些努力縮寫下來時，可以被稱為是「做那些無法規模化的事來讓100個人愛上你。」</p>
+                </div>
+
+                <h3>讓100個人愛上 Airbnb，而不是讓 10,000 個人稍微喜歡 Airbnb</h3>
+
+                <div class="key-insight">
+                    <p>沒有人要將自己的房間出租、也沒有太多人願意使用這樣的服務，Airbnb的創辦人兼CEO 說，他們早期做了許多那些無法規模化的事，努力讓 100 個人愛上 Airbnb，而不是讓 10,000 個人稍微喜歡 Airbnb 。</p>
+                </div>
+
+                <div class="strategy-section">
+                    <div class="strategy-item">
+                        <p><strong>1. 從美國西岸飛去美國東岸，親自服務房東們</strong><br>
+                        Airbnb 創辦人 Brian Chesky 會從美國西岸飛去美國東岸拜會每位房東，甚至會透過Airbnb訂下他們的房間和他們共同居住幾天，然後新增他們在Airbnb平台上的第一筆評論。</p>
+
+                        <p>除此之外，Brian Chesky 曾問過房東：「如果我們現在有個按鈕，只要你一按下之後，立刻眼前就會出現一位攝影師專門幫你們拍攝房屋，你們覺得如何？」房東們當然都愛死了這個想法。於是 Brian Chesky 就特地從朋友那裡借了一台好的照相機。房東們看到 Brian Chesky 拿著相機出現，都嚇到了，沒想到創辦人親自來當攝影師！ Brian Chesky 做的東西遠比拍照更多，包含將租金收據親自交到房東的手上。</p>
+
+                        <p><strong>如果有一個人因為你的種種小事被感動，進而愛上你，那麼他的這種愛是可以散播開來的，這也是「成長」的真諦所在。</strong></p>
+                    </div>
+
+                    <div class="strategy-item">
+                        <p><strong>2. 接納客戶的建議，找到可能成長的契機</strong><br>
+                        Airbnb 在起初僅僅只是出租房間並不包含出租整間房子，在2010年的一次訪談中，Brian Chesky 提到出租整間房子是他們的一個房東的建議。這位房東是美國知名歌手的鼓手，他常常在外地巡演，他不只想出租一個房間跟空氣床，而是想要出租整個房間。Brian Chesky 說這是一個我們甚至沒有意識的選項，而這個選項後來成為Airbnb最主要的業務。</p>
+                    </div>
+
+                    <div class="strategy-item">
+                        <p><strong>3. 為了讓客戶愛上Airbnb ，必須建立超越 5 星之上的標準</strong></p>
+
+                        <p>Brian Chesky 為了要打造讓客戶愛上Airbnb ，他們不斷思考要如何拿到顧客評論的六星，所以他們做了以下的練習。</p>
+
+                        <div class="star-rating-system">
+                            <div class="star-examples">
+                                <p><strong>5 星服務：</strong>你下了飛機，出了機場，到 Airbnb 的住宿地點，房東已經在家裡等著你了。這是 5 星。</p>
+                            </div>
+
+                            <div class="star-examples">
+                                <p><strong>6 星服務：</strong>除了以上所說，再加上房東親自到機場接你。</p>
+                            </div>
+
+                            <div class="star-examples">
+                                <p><strong>7 星服務：</strong>除了以上所說，接你的車子還是豪華轎車，豪華轎車裡面有薯片，是你最喜歡的口味，有清爽可口的椰子汁。</p>
+                            </div>
+
+                            <div class="star-examples">
+                                <p><strong>8 星服務：</strong>當你在機場落地，有盛大的遊行歡迎你前來。</p>
+                            </div>
+
+                            <div class="star-examples">
+                                <p><strong>9 星服務：</strong>當你下飛機的那一刻，底下有 5000 名尖叫的粉絲，拿著標語歡迎你的降臨。我們將其稱之為「披頭四的歡迎會」。</p>
+                            </div>
+
+                            <div class="star-examples">
+                                <p><strong>10 星服務：</strong>當你抵達時發現 Elon Musk在房間外等你，跟你說，我們來場太空旅行吧。</p>
+                            </div>
+                        </div>
+
+                        <p>這不僅僅是嘴砲而已，他們為了要讓房東可以提供更好的住宿品質，Airbnb提供了一連串給房東的課程、加值服務、評價方式，就像早期他們會親自幫房東們的房屋照相，協助房東們提供早餐來讓房客們可以得到滿足，這一切就是為了要促成房東可以提供6星甚至是7星的服務。</p>
+                    </div>
+                </div>
+
+                <h3>這是沒有魔法的世界</h3>
+
+                <div class="no-magic-section">
+                    <p>Airbnb 的故事並且搭配著 Pau Graham 的 <a href="https://www.paulgraham.com/ds.html">Do things that don't scale</a> 之後，才略略微體會到原來這是沒有魔法的世界。Airbnb說他們其實做了好多次公開發佈，因為他們還很小所以沒有什麼人注意到他們到底發佈了幾次。每一次發布沒有任何的魔法，不會有一次發布獲得成功，能夠獲得成功的都是透過不斷跟客戶的互動才知道可以改進哪些，也因為深深獲得100個人的喜愛並建立起口碑之後才獲得更多的用戶。（發布新產品時沒有任何魔法就像是<a href="https://hungkaichuang.com/%E6%B1%BA%E7%AD%96%E8%88%87%E5%AE%9A%E4%BD%8D-007-20%E6%AD%B2%E5%A4%A9%E6%89%8D%E5%B7%A5%E7%A8%8B%E5%B8%AB-jessica-mah-%E5%B8%B6%E8%91%97-indinero-%E7%88%AC%E5%87%BA%E5%9C%B0%E7%8D%84%E7%9A%84/">第7期電子報的故事</a>）</p>
+
+                    <p>Paul Graham 說認為只要發布新產品就可以獲得用戶，是一種自我中心和懶惰的結合，因為認為自己建造的東西非常偉大，又同時僅想透過廣播有一次發布就想要獲得用戶。然而獲得用戶、獲得喜愛始終是一個逐漸的過程。僅僅做出一件非凡的事情是不夠的，不須付出非凡的努力，任何忽略努力的策略，無論是想透過一次大型的發表會來獲得用戶，本質上都是值得懷疑的。</p>
+
+                    <p>而就正因為現在還是小的新創公司，才能夠跟客戶深入的交流，這些事是超級大公司（例如蘋果、Google）完全做不到的事。透過做這些無法規模化的事來被一小群人熱愛才能建立起組織內的動力，也才知道是不是真的受到用戶的喜愛。否則下廣告只會檢討廣告本身是否受到喜愛而沒有思考到商品是否真正的被用戶喜愛。</p>
+
+                    <p>當然本篇 Airbnb 故事是只有成立在草創時期，因為在當時可以用大把的時間、精力去做那些無法規模化的事，當 Airbnb 變成 100 人、1000人的公司時，就難以採取採取這樣的策略。在早期採取正確的決策，讓他們可以熬到成為大型科技公司，用後見之明來看，做那些無法規模的事情來讓100個人愛上他們，確實有其道理。</p>
+                </div>
+
+                <h3>如果我的工作是一項產品</h3>
+
+                <div class="personal-reflection">
+                    <p>這故事跟我的關係為何？每當看見這些公司決策時，我都在想這跟我有什麼關係呢？我還沒創業，那這些決策好像就是一則又一則的勵志小故事。然而，如果我重新把經營我自己的工作看成是一種創業、把我自己的工作看作是一項產品時</p>
+
+                    <p>如果我的工作是一項產品，我需要進一步思考6星、7星、8星甚至更多星的工作是什麼（我想當然不是毫無止盡的加班…，如果你有任何想法都可以跟我分享！）</p>
+
+                    <p>如果我的工作是一項產品，我不會期待每完成一次手上的工作就會得到熱烈的掌聲、稱讚、薪資回報。因為這始終是一個逐漸的過程，讓工作成為非凡是需要持續付出非凡的努力。</p>
+                </div>
+
+                <div class="highlight-question">
+                    <p><strong>如果你喜歡這期的內容，歡迎跟我分享心得，或是分享這篇文章，來讓更多人可以訂閱電子報。</strong></p>
+                </div>
+                <!-- YOUR ORIGINAL CONTENT ENDS HERE -->
+            </div>
+            
+            <!-- Optional: Article tags -->
+            <div class="article-tags">
+                <strong>標籤： </strong>
+                <a href="#" class="tag">決策與定位</a>
+                <a href="#" class="tag">Airbnb</a>
+                <a href="#" class="tag">Paul Graham</a>
+                <a href="#" class="tag">無法規模化</a>
+                <a href="#" class="tag">客戶服務</a>
+                <a href="#" class="tag">Brian Chesky</a>
+                <a href="#" class="tag">創業策略</a>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="../../zh-tw/" class="nav-link back-link">← 返回首頁</a>
+                <a href="../../zh-tw/articles.html" class="nav-link">所有文章</a>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 我的個人網站</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

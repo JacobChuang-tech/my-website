@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>決策與定位#005 你以一種與他人不同的方式看待世界 - 我的個人網站</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        /* Article-specific styles */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .article-date {
+            color: #777;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .article-category {
+            color: #3498db;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .article-content {
+            line-height: 1.8;
+            color: #333;
+            font-family: 'PingFang TC', 'Microsoft JhengHei', 'SimHei', sans-serif;
+        }
+        .article-content p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .article-content h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #34495e;
+            font-size: 1.4em;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+        .article-content h3 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 1.2em;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .article-content blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+            background-color: #f9f9f9;
+            padding: 15px 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        .article-content ul, .article-content ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        .article-content li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        .article-content a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+        .highlight-question {
+            background-color: #e8f6f3;
+            border-left: 4px solid #1abc9c;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-weight: 500;
+            border-radius: 0 5px 5px 0;
+        }
+        .key-point {
+            background-color: #fef9e7;
+            border: 1px solid #f39c12;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 5px;
+        }
+        .huang-quote {
+            background-color: #f0f8ff;
+            border: 2px solid #4169e1;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+            font-style: italic;
+            font-size: 1.05em;
+        }
+        .story-section {
+            background-color: #f8f9fa;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            border-left: 4px solid #6c757d;
+        }
+        .yahoo-story {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .keyhole-story {
+            background-color: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .mom-comment {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            font-style: italic;
+            text-align: center;
+        }
+        .personal-reflection {
+            background-color: #e8f5e5;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 5px 5px 0;
+            font-style: italic;
+        }
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, #3498db, transparent);
+            margin: 30px 0;
+        }
+        .language-versions {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #28a745;
+        }
+        .language-versions strong {
+            color: #28a745;
+        }
+        .language-versions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .language-versions a:hover {
+            text-decoration: underline;
+        }
+        .article-tags {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #e0e0e0;
+        }
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .nav-link {
+            color: #3498db;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .back-link {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .navigation-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .language-versions a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="language-selector">
+                <a href="../../en/">English</a>
+                <a href="../../jp/">日本語</a>
+                <a href="../../zh-tw/" class="active">繁體中文</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="article-container">
+            <!-- Language version links -->
+            <div class="language-versions">
+                <strong>閱讀其他語言版本：</strong>
+                <a href="../en/article-005-view-positioning.html">English</a>
+                <a href="../jp/article-005-view-positioning.html">日本語</a>
+            </div>
+            
+            <div class="article-header">
+                <div class="article-category">決策與定位</div>
+                <h1>決策與定位#005 你以一種與他人不同的方式看待世界</h1>
+                <div class="article-date">2023年12月5日</div>
+            </div>
+            
+            <div class="article-content">
+                <!-- YOUR ORIGINAL CONTENT STARTS HERE -->
+                <p>Hi 大家早，</p>
+                
+                <p>上期跟大家分享了亞馬遜致力成為向顧客收取最少費用，提供最大價值的決策（或者是剝削勞工來回饋股東跟消費者的決策）。這期要來談定位！定位好像是離自己很遠的事情，定位似乎是創業家才需要去思考的事情，但其實定位就表示著「你以一種與他人不同的方式看待世界，而你看到了你認為的機會」從這個機會開始你開啟了一連串的決策。這期將從NVIDIA創辦人黃仁勳的演講和Google Earth的前身Keyhole來談起。</p>
+                
+                <p>如果覺得本期內容有趣，歡迎將信件分享給你的朋友、邀請訂閱；若對過往期數感興趣，請 <a href="https://hungkaichuang.com/category/decisionposition/">由此進入</a>。任何的點選、新增訂閱都會讓我充滿動力撰寫下一期電子報。</p>
+                
+                <h3>黃仁勳對電玩的特殊愛好讓他看見機會</h3>
+                
+                <p>黃仁勳提到創業時，1993年創業PC是Windows 3，CD光碟機繼續才剛要開始上市，當時候並不存在網路技術。所有的科技看起來很笨，電腦是只給專業人士使用的配備，甚至專業人士都不愛用。但當時候黃仁勳決定成立3D繪圖晶片的公司，而此技術的殺手級應用是電視遊戲、電腦遊戲。當黃仁勳帶著這樣的想法去找投資人時，投資人說不存在這樣的市場。</p>
+                
+                <p>黃仁勳有點受挫，跟他媽媽講說他現在要創業，打造的晶片將可以提供給電視遊戲或是電腦遊戲使用。他媽媽回說：「你為什麼不去找份工作？」果然天下媽媽都是一樣的XD</p>
+                
+                <div class="mom-comment">
+                    <p>「你為什麼不去找份工作？」果然天下媽媽都是一樣的XD</p>
+                </div>
+                
+                <div class="huang-quote">
+                    <p>黃仁勳提到：「我們在電視遊戲世代*中長大，因此電視遊戲的娛樂價值對我來說非常明顯。我可以想像它怎樣成為一個非常大的市場和一個非常大的行業。對於那些年紀較大的人來說，這種敏感性並不存在。然而當時，對於我們是常識，但對於其他人而言是獨一無二的。沒有人會創造這種技術。沒有人會創建一家公司，其唯一目的是創建技術，使電視遊戲成為可能。所以那是我們的觀點。」</p>
+                </div>
+                
+                <p><em>*最早的電視遊戲機起源於1970年代，是1980年代主流的電視遊戲機是卡帶型電視遊戲機。</em></p>
+                
+                <div class="key-point">
+                    <p>對於生長於電視遊戲時代的黃仁勳而言，他用一種與他人不同的方式看待世界，而看到了他認為的機會。</p>
+                </div>
+                
+                <h3>黃仁勳看走眼的Yahoo</h3>
+                
+                <div class="yahoo-story">
+                    <p>當黃仁勳印象深刻的一件事是，當有紅杉資本（創業投資基金）問黃仁勳：「有幾個史丹福大學的孩子，他們有一個網路搜尋頁面的東西。你只需要輸入你正在尋找的東西，它就會引導你到正確的網頁。」</p>
+                    
+                    <p>黃仁勳回：「喔喔那就是黃頁」（按：黃頁就是一本記載著眾多商家的電話簿，早期都是透過黃頁找到所需的資訊跟商家）</p>
+                    
+                    <p>紅杉資本問：「我們應該投資這家公司嗎？」</p>
+                    
+                    <p>黃仁勳說：「他們不可能賺錢。那些東西是免費的。」</p>
+                    
+                    <p>紅杉資本說：「嗯，我們自己也弄不明白，但給他們一百萬或兩百萬美金不花多少錢。」</p>
+                </div>
+                
+                <p>最後紅杉資本投資的這間公司是最終成為Yahoo。Yahoo於1994年成立，1996公開上市，募集了一億3380萬美金。雖然Yahoo後來隕落了，但是在全盛時期Yahoo象徵著最強大的網路巨頭。</p>
+                
+                <p>黃仁勳深刻的提到，雖然他看見電動遊戲的機會，但他對於搜尋網頁完全沒有看見機會。</p>
+                
+                <h3>黃仁勳看到了Keyhole（Google Earth前身）的潛力</h3>
+                
+                <div class="keyhole-story">
+                    <p>大概在2001年在矽谷有一間新成立的小公司，叫做Keyhole。他們創造了一個3D虛擬世界。使用者只需要輸入地址，就可以從太空開始、看到地球並且放大到所輸入的地址。在2002年時Keyhole瀕臨倒閉，而當時NVIDIA看見他們的潛力願意投資50萬美金，然後到世界各地展示給他們的客戶看。這雖然帶給他們一點收入，但仍舊無法支撐他們的營運，到2002年年底時公司又接近用光資金，但是也找不到下一輪投資人，公司相當接近倒閉。創辦人跟公司員工講好，每人減薪10%-100%，就為了讓公司可以繼續撐下去，因為他們相信地圖將會是未來人類生活一大發展的機會。</p>
+                    
+                    <p>公司的轉機出現在2003年3月20日，CNN為了報導美軍攻打伊拉克的新聞，在新聞直播現場透過Keyhole的技術現場輸入地址，讓觀眾可以從太空開始、看到地球並且放到到所輸入的位置。這讓全美的觀眾非常驚奇，就在3月20日下午開始大家瘋狂湧入Keyhole的網站就為了測試這項產品。這改變了Keyhole的命運。也讓Google看見Keyhole的潛力，決定於2004年併購這間公司並且重新打造這項產品，變成後來大家最愛用的Google Earth，後來變成Google Map。如果當初沒有創辦人的堅持，沒有NVIDIA投資的50萬美元，很有可能我們今天的世界就會變得稍稍不一樣了。</p>
+                </div>
+                
+                <h3>我的觀點、我的機會就是我的定位</h3>
+                
+                <div class="huang-quote">
+                    <p>黃仁勳在演講中特別提到：「你的觀點源自你的生活經歷，你的常識，對你來說有趣的事情。因此，重要的是要意識到你也有觀點。因此你就會看到機會。」</p>
+                </div>
+                
+                <p>雖然整篇演講中黃仁勳並沒有提到任何定位，但其實他談的就是他的觀點以及人生定位，讓他決定要投入開發遊戲晶片的就是他對於電視遊戲的觀點，讓他決定他將自己從眾多選擇中定位到繪圖晶片。而Google Earth前身的Keyhole創辦人原本是電腦遊戲引擎的開發者，但他看見地圖的這項特別的應用，他認為是未來的機會，決定從當時候被認為是遊戲產業的明日之星中離開，成立新公司投入在地圖產業中。</p>
+                
+                <div class="personal-reflection">
+                    <p>如果我們的機會源自於我們的生活經歷、我們的常識，以及對我來說是有趣的事情，那我就會看到機會。然而最常讓我感到疑惑的事情是，那我對於什麼有興趣，我看見什麼樣的機會，而我又可以如何進行解決？</p>
+                </div>
+                
+                <div class="highlight-question">
+                    <p><strong>如果你看見了某些事物的機會，進而找到自己的定位，歡迎跟我分享！</strong></p>
+                </div>
+                <!-- YOUR ORIGINAL CONTENT ENDS HERE -->
+            </div>
+            
+            <!-- Optional: Article tags -->
+            <div class="article-tags">
+                <strong>標籤： </strong>
+                <a href="#" class="tag">決策與定位</a>
+                <a href="#" class="tag">黃仁勳</a>
+                <a href="#" class="tag">NVIDIA</a>
+                <a href="#" class="tag">獨特視角</a>
+                <a href="#" class="tag">機會識別</a>
+                <a href="#" class="tag">Google Earth</a>
+                <a href="#" class="tag">Yahoo</a>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="../../zh-tw/" class="nav-link back-link">← 返回首頁</a>
+                <a href="../../zh-tw/articles.html" class="nav-link">所有文章</a>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 我的個人網站</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>

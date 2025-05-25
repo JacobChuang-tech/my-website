@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision & Positioning #009 – Airbnb: Do Things That Don't Scale to Make 100 People Love You - My Personal Website</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <style>
+        /* Article-specific styles */
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .article-date {
+            color: #777;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .article-category {
+            color: #3498db;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .article-content {
+            line-height: 1.8;
+            color: #333;
+        }
+        .article-content p {
+            margin-bottom: 20px;
+        }
+        .article-content h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .article-content h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .article-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .article-content blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+            background-color: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+        .article-content li {
+            margin-bottom: 5px;
+        }
+        .language-versions {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #28a745;
+        }
+        .language-versions strong {
+            color: #28a745;
+        }
+        .language-versions a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .language-versions a:hover {
+            text-decoration: underline;
+        }
+        .article-tags {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .tag {
+            display: inline-block;
+            background-color: #f0f0f0;
+            color: #666;
+            padding: 5px 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+        .tag:hover {
+            background-color: #e0e0e0;
+        }
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .nav-link {
+            color: #3498db;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #3498db;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .back-link {
+            background-color: #3498db;
+            color: white;
+        }
+        .stars-box {
+            background-color: #fff3cd;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+        }
+        .stars-box h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        .stars-box p {
+            margin-bottom: 8px;
+            color: #856404;
+        }
+        .quote-highlight {
+            background-color: #e3f2fd;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2196f3;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #1565c0;
+            text-align: center;
+            margin: 25px 0;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 20px;
+                margin: 10px;
+            }
+            .navigation-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .language-versions a {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="language-selector">
+                <a href="../../en/" class="active">English</a>
+                <a href="../../jp/">日本語</a>
+                <a href="../../zh-tw/">繁體中文</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="article-container">
+            <!-- Language version links -->
+            <div class="language-versions">
+                <strong>Read this article in:</strong>
+                <a href="../jp/article-009-Airbnb-decision.html">日本語</a>
+                <a href="../zh-tw/article-009-Airbnb-decision.html">繁體中文</a>
+            </div>
+            
+            <div class="article-header">
+                <div class="article-category">Startup Strategy</div>
+                <h1>Decision & Positioning #009 – Airbnb: Do Things That Don't Scale to Make 100 People Love You</h1>
+                <div class="article-date">January 3, 2024</div>
+            </div>
+            
+            <div class="article-content">
+                <p>Paul Graham (known as the father of Silicon Valley startups) has a very famous saying when encouraging startups:</p>
+                
+                <div class="quote-highlight">
+                    "Do things that don't scale"
+                </div>
+                
+                <p>The background of this statement is that many startup founders initially want to do things that are efficient and scalable. For example, when a newly established company wants to acquire users, the first approach they think of is buying online ads, finding influencers for sponsorships, or advertising on Facebook or social media platforms, because this is the fastest and most quickly scalable method. A Facebook post can buy exposure or even users for just $500—it's the most effective and most scalable thing to do.</p>
+                
+                <p>But Paul Graham suggests that the best method is for founders to personally develop customers and find customers themselves. Although this is the slowest method and the least scalable way—after all, founders have limited time per day, can contact limited people, and have limited reach for promotion, unable to grow and replicate quickly—Paul Graham believes this is exactly what startups should do: do things that don't scale.</p>
+                
+                <p>The best example of this is Airbnb, the world-famous home-sharing platform that allows hosts to list spare rooms and houses for rent on the platform. Airbnb features everything from farmhouses, castles, beachside cottages, mountain treehouses, to common apartments in cities. In the past, there were even students from National Chengchi University who listed their dormitory beds on Airbnb for rent.</p>
+                
+                <p>Airbnb now has a market value of about $80 billion and generates billions of dollars in revenue each quarter. However, when Airbnb first started, they experienced many difficulties. No one was willing to invest in them, and they could only fund Airbnb's business by selling cereal they designed themselves. Before Airbnb climbed to its current position, they made many efforts. If these efforts were summarized, they could be called "doing things that don't scale to make 100 people love you."</p>
+
+                <h3>Make 100 People Love Airbnb, Not 10,000 People Slightly Like Airbnb</h3>
+                
+                <p>With no one wanting to rent out their rooms and not many people willing to use such services, Airbnb's founder and CEO said they did many non-scalable things early on, working hard to make 100 people love Airbnb rather than making 10,000 people slightly like Airbnb.</p>
+                
+                <p><strong>1. Flying from the West Coast to the East Coast to personally serve hosts</strong></p>
+                
+                <p>Airbnb founder Brian Chesky would fly from the US West Coast to the East Coast to visit each host, even booking their rooms through Airbnb and living with them for several days, then adding the first review for them on the Airbnb platform.</p>
+                
+                <p>Beyond that, Brian Chesky once asked hosts: "If we had a button right now, and as soon as you pressed it, a photographer would immediately appear to take professional photos of your house, how would you feel?" The hosts absolutely loved this idea. So Brian Chesky specifically borrowed a good camera from friends. When hosts saw Brian Chesky appear with a camera, they were shocked—they never expected the founder to personally become the photographer!</p>
+                
+                <p>Brian Chesky did far more than just photography, including personally delivering rental receipts to hosts' hands.</p>
+                
+                <p>If one person is moved by your various small gestures and falls in love with you, then this kind of love can spread. This is the true essence of "growth."</p>
+                
+                <p><strong>2. Accepting customer suggestions and finding growth opportunities</strong></p>
+                
+                <p>Initially, Airbnb only rented out rooms and didn't include renting entire houses. In a 2010 interview, Brian Chesky mentioned that renting entire houses was a suggestion from one of their hosts. This host was a drummer for a famous American singer who often toured away from home. He didn't just want to rent a room with an air mattress but wanted to rent his entire house. Brian Chesky said this was an option they hadn't even realized existed, and this option later became Airbnb's main business.</p>
+                
+                <p><strong>3. To make customers love Airbnb, they had to establish standards beyond 5 stars</strong></p>
+                
+                <p>To create customer love for Airbnb, Brian Chesky constantly thought about how to get 6-star customer reviews, so they did the following exercise:</p>
+
+                <div class="stars-box">
+                    <h4>The Star Rating Exercise:</h4>
+                    <p><strong>5-star service:</strong> You get off the plane, leave the airport, arrive at the Airbnb accommodation, and the host is already waiting for you at home. This is 5 stars.</p>
+                    
+                    <p><strong>6-star service:</strong> In addition to the above, the host personally picks you up at the airport.</p>
+                    
+                    <p><strong>7-star service:</strong> In addition to the above, the pickup car is a luxury sedan with chips inside—your favorite flavor—and refreshing coconut water.</p>
+                    
+                    <p><strong>8-star service:</strong> When you land at the airport, there's a grand parade welcoming your arrival.</p>
+                    
+                    <p><strong>9-star service:</strong> The moment you get off the plane, there are 5,000 screaming fans below holding signs welcoming your arrival. We call this "The Beatles Welcome."</p>
+                    
+                    <p><strong>10-star service:</strong> When you arrive, you find Elon Musk waiting outside the room, saying, "Let's take a space trip."</p>
+                </div>
+                
+                <p>This wasn't just talk. To help hosts provide better accommodation quality, Airbnb provided a series of courses, value-added services, and evaluation methods for hosts. Just like in the early days when they personally photographed hosts' houses, they helped hosts provide breakfast to satisfy guests—all to enable hosts to provide 6-star or even 7-star service.</p>
+
+                <h3>This Is a World Without Magic</h3>
+                
+                <p>After hearing Airbnb's story combined with Paul Graham's "Do things that don't scale," I began to slightly understand that this is a world without magic. Airbnb said they actually made many public launches because they were still small, so no one really noticed how many times they launched. Each launch had no magic—no single launch achieved success. Success could only be achieved through continuous interaction with customers to know what could be improved, and only after deeply earning the love of 100 people and building word-of-mouth did they gain more users.</p>
+                
+                <p>Paul Graham believes that thinking you can gain users just by launching a product is a combination of self-centeredness and laziness—believing what you've built is great while only wanting to gain users through broadcasting and one-time launches. However, gaining users and gaining love is always a gradual process. Simply doing one extraordinary thing isn't enough without extraordinary effort. Any strategy that ignores effort, whether trying to gain users through one large launch event, is essentially questionable.</p>
+                
+                <p>It's precisely because they were still a small startup that they could deeply communicate with customers—these are things that super large companies (like Apple or Google) absolutely cannot do. By doing these non-scalable things to be loved by a small group of people, they could build momentum within the organization and know whether they were truly loved by users. Otherwise, advertising would only review whether the ads themselves were liked without considering whether the product was truly loved by users.</p>
+                
+                <p>Of course, this Airbnb story only applies to the startup phase, because at that time they could spend lots of time and energy doing non-scalable things. When Airbnb became a company of 100 or 1,000 people, it became difficult to adopt such strategies. Making the right decisions early allowed them to survive to become a large tech company. Looking back, doing non-scalable things to make 100 people love them indeed made sense.</p>
+
+                <h3>If My Work Were a Product</h3>
+                
+                <p>How does this story relate to me? Whenever I see these company decisions, I always wonder what relevance they have to me. I haven't started a business yet, so these decisions seem like inspirational stories one after another. However, if I reframe managing my own work as a type of entrepreneurship and view my own work as a product:</p>
+                
+                <p>If my work were a product, I need to think further about what 6-star, 7-star, 8-star, or even higher-star work looks like (I imagine it's certainly not endless overtime... if you have any thoughts, please share with me!)</p>
+                
+                <p>If my work were a product, I wouldn't expect to receive enthusiastic applause, praise, or salary rewards every time I complete a task at hand. Because this is always a gradual process—making work extraordinary requires continuously putting in extraordinary effort.</p>
+                
+                <p>If you enjoyed this issue's content, welcome to share your thoughts with me or share this article to let more people subscribe to the newsletter.</p>
+            </div>
+            
+            <!-- Optional: Article tags -->
+            <div class="article-tags">
+                <strong>Tags: </strong>
+                <a href="#" class="tag">Airbnb</a>
+                <a href="#" class="tag">Paul Graham</a>
+                <a href="#" class="tag">Do Things That Don't Scale</a>
+                <a href="#" class="tag">Startup Strategy</a>
+                <a href="#" class="tag">Customer Love</a>
+                <a href="#" class="tag">Y Combinator</a>
+            </div>
+            
+            <div class="navigation-links">
+                <a href="../../en/" class="nav-link back-link">← Back to Home</a>
+                <a href="../../en/articles.html" class="nav-link">All Articles</a>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 My Personal Website</p>
+    </footer>
+
+    <script src="../../js/script.js"></script>
+</body>
+</html>
