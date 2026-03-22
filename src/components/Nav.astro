@@ -1,0 +1,86 @@
+---
+import { type Lang, useTranslations, getLocalePath } from '../i18n';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+
+interface Props {
+  lang: Lang;
+  currentPath?: string;
+}
+
+const { lang, currentPath = '' } = Astro.props;
+const t = useTranslations(lang);
+
+const navItems = [
+  { label: t('nav.home'), href: getLocalePath(lang) },
+  { label: t('nav.writing'), href: getLocalePath(lang, 'writing') },
+];
+---
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href={getLocalePath(lang)} class="site-logo">Jacob Chuang</a>
+    <nav class="site-nav">
+      {navItems.map((item) => (
+        <a href={item.href} class="nav-link">{item.label}</a>
+      ))}
+    </nav>
+    <LanguageSwitcher lang={lang} currentPath={currentPath} />
+  </div>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-bg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .site-logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+  }
+
+  .site-nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .nav-link {
+    color: var(--color-text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+
+  .nav-link:hover {
+    color: var(--color-text);
+  }
+
+  @media (max-width: 640px) {
+    .header-inner {
+      flex-wrap: wrap;
+    }
+
+    .site-nav {
+      order: 3;
+      width: 100%;
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+</style>

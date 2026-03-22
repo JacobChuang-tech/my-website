@@ -1,0 +1,95 @@
+---
+import { type Lang, languages, getHtmlLang, getLocalePath, useTranslations } from '../i18n';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang: Lang;
+  currentPath?: string;
+}
+
+const { title, description, lang, currentPath = '' } = Astro.props;
+const t = useTranslations(lang);
+const pageTitle = title ? `${title} | ${t('site.title')}` : t('site.title');
+const pageDescription = description || t('site.description');
+const htmlLang = getHtmlLang(lang);
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang={htmlLang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={pageDescription} />
+    <title>{pageTitle}</title>
+
+    <link rel="canonical" href={canonicalURL.href} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    {/* hreflang tags for all languages */}
+    {Object.keys(languages).map((l) => (
+      <link
+        rel="alternate"
+        hreflang={getHtmlLang(l as Lang)}
+        href={new URL(getLocalePath(l as Lang, currentPath), Astro.site).href}
+      />
+    ))}
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={new URL(getLocalePath('zh-tw', currentPath), Astro.site).href}
+    />
+
+    {/* Open Graph */}
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL.href} />
+    <meta property="og:locale" content={htmlLang} />
+
+    {/* Twitter Card */}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+
+    {/* Schema.org JSON-LD structured data */}
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://hungkaichuang.com/#website",
+          "url": "https://hungkaichuang.com",
+          "name": "Jacob Chuang",
+          "description": "Trilingual lawyer focused on decision analysis and positioning strategy at the intersection of law, business, and technology.",
+          "inLanguage": ["zh-TW", "en", "ja"],
+          "author": { "@id": "https://hungkaichuang.com/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://hungkaichuang.com/#person",
+          "name": "Jacob Chuang",
+          "alternateName": "莊閎凱",
+          "url": "https://hungkaichuang.com",
+          "jobTitle": "Lawyer",
+          "knowsLanguage": ["zh-TW", "en", "ja"],
+          "description": "Trilingual lawyer focused on decision analysis and positioning strategy at the intersection of law, business, and technology."
+        }
+      ]
+    })} />
+
+    {/* RSS feed link */}
+    <link rel="alternate" type="application/rss+xml" title="Jacob Chuang RSS Feed" href="/rss.xml" />
+  </head>
+  <body>
+    <Nav lang={lang} currentPath={currentPath} />
+    <main>
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>
