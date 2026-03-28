@@ -1,0 +1,106 @@
+# Jacob Chuang (hungkaichuang.com)
+
+> Jacob Chuang (Chinese: Jacob Chuang) is a trilingual lawyer focused on decision analysis and positioning strategy at the intersection of law, business, and technology. This site publishes articles in Traditional Chinese (zh-tw), English (en), and Japanese (jp).
+
+## Author
+
+- Name: Jacob Chuang
+- Languages: Traditional Chinese, English, Japanese
+- Focus: Decision analysis, positioning strategy, law, business, technology
+
+## Site Structure
+
+- Homepage (zh-tw): https://hungkaichuang.com/zh-tw/
+- Homepage (en): https://hungkaichuang.com/en/
+- Homepage (jp): https://hungkaichuang.com/jp/
+- Writing (zh-tw): https://hungkaichuang.com/zh-tw/writing
+- Writing (en): https://hungkaichuang.com/en/writing
+- Writing (jp): https://hungkaichuang.com/jp/writing
+- RSS Feed: https://hungkaichuang.com/rss.xml
+
+## Articles (Traditional Chinese - zh-tw)
+
+- [article-001-nvdia-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-001-nvdia-decision.md): NVIDIA Decision
+- [article-002-nvdia-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-002-nvdia-positioning.md): NVIDIA Positioning
+- [article-003-cancer-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-003-cancer-decision.md): Cancer Decision
+- [article-004-amazon-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-004-amazon-positioning.md): Amazon Positioning
+- [article-005-view-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-005-view-positioning.md): View Positioning
+- [article-006-acquired-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-006-acquired-decision.md): Acquired Decision
+- [article-007-engineer-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-007-engineer-decision.md): Engineer Decision
+- [article-008-pagonia-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-008-pagonia-positioning.md): Patagonia Positioning
+- [article-009-Airbnb-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-009-Airbnb-decision.md): Airbnb Decision
+- [article-010-Airbnb-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-010-Airbnb-positioning.md): Airbnb Positioning
+- [article-011-mother-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-011-mother-decision.md): Mother Decision
+- [article-012-colledge-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-012-colledge-positioning.md): College Positioning
+- [article-013-hbo-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-013-hbo-decision.md): HBO Decision
+- [article-014-netflix-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-014-netflix-decision.md): Netflix Decision
+- [article-015-openaisui-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-015-openaisui-decision.md): OpenAI Lawsuit Decision
+- [article-016-transparency-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-016-transparency-decision.md): Transparency Decision
+- [article-017-google-anti-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-017-google-anti-decision.md): Google Anti-Competition Decision
+- [article-018-donothing-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-018-donothing-decision.md): Do Nothing Decision
+- [article-019-netflix2022-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-019-netflix2022-decision.md): Netflix 2022 Decision
+- [article-020-visionpro-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-020-visionpro-decision.md): Vision Pro Decision
+- [article-021-tiktok-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-021-tiktok-decision.md): TikTok Decision
+- [article-022-twcongress-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-022-twcongress-decision.md): Taiwan Congress Decision
+- [article-023-jpcompetition.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-023-jpcompetition.md): Japan Competition
+- [article-024-eumeta-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-024-eumeta-decision.md): EU Meta Decision
+- [article-025-run-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-025-run-decision.md): Running Decision
+- [article-026-ai-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-026-ai-decision.md): AI Decision
+
+## Articles (English)
+
+- [article-001-nvdia-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-001-nvdia-decision.md): NVIDIA Decision
+- [article-002-nvdia-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-002-nvdia-positioning.md): NVIDIA Positioning
+- [article-003-cancer-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-003-cancer-decision.md): Cancer Decision
+- [article-004-amazon-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-004-amazon-positioning.md): Amazon Positioning
+- [article-005-view-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-005-view-positioning.md): View Positioning
+- [article-006-acquired-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-006-acquired-decision.md): Acquired Decision
+- [article-007-engineer-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-007-engineer-decision.md): Engineer Decision
+- [article-008-pagonia-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-008-pagonia-positioning.md): Patagonia Positioning
+- [article-009-Airbnb-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-009-Airbnb-decision.md): Airbnb Decision
+- [article-010-Airbnb-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-010-Airbnb-positioning.md): Airbnb Positioning
+- [article-011-mother-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-011-mother-decision.md): Mother Decision
+- [article-012-colledge-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-012-colledge-positioning.md): College Positioning
+- [article-013-hbo-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-013-hbo-decision.md): HBO Decision
+- [article-014-netflix-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-014-netflix-decision.md): Netflix Decision
+- [article-015-openaisui-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-015-openaisui-decision.md): OpenAI Lawsuit Decision
+- [article-016-transparency-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-016-transparency-decision.md): Transparency Decision
+- [article-017-google-anti-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-017-google-anti-decision.md): Google Anti-Competition Decision
+- [article-018-donothing-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-018-donothing-decision.md): Do Nothing Decision
+- [article-019-netflix2022-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-019-netflix2022-decision.md): Netflix 2022 Decision
+- [article-020-visionpro-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-020-visionpro-decision.md): Vision Pro Decision
+- [article-021-tiktok-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-021-tiktok-decision.md): TikTok Decision
+- [article-022-twcongress-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-022-twcongress-decision.md): Taiwan Congress Decision
+- [article-023-jpcompetition.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-023-jpcompetition.md): Japan Competition
+- [article-024-eumeta-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-024-eumeta-decision.md): EU Meta Decision
+- [article-025-run-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-025-run-decision.md): Running Decision
+- [article-026-ai-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-026-ai-decision.md): AI Decision
+
+## Articles (Japanese - jp)
+
+- [article-001-nvdia-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-001-nvdia-decision.md): NVIDIA Decision
+- [article-002-nvdia-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-002-nvdia-positioning.md): NVIDIA Positioning
+- [article-003-cancer-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-003-cancer-decision.md): Cancer Decision
+- [article-004-amazon-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-004-amazon-positioning.md): Amazon Positioning
+- [article-005-view-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-005-view-positioning.md): View Positioning
+- [article-006-acquired-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-006-acquired-decision.md): Acquired Decision
+- [article-007-engineer-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-007-engineer-decision.md): Engineer Decision
+- [article-008-pagonia-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-008-pagonia-positioning.md): Patagonia Positioning
+- [article-009-Airbnb-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-009-Airbnb-decision.md): Airbnb Decision
+- [article-010-Airbnb-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-010-Airbnb-positioning.md): Airbnb Positioning
+- [article-011-mother-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-011-mother-decision.md): Mother Decision
+- [article-012-colledge-positioning.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-012-colledge-positioning.md): College Positioning
+- [article-013-hbo-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-013-hbo-decision.md): HBO Decision
+- [article-014-netflix-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-014-netflix-decision.md): Netflix Decision
+- [article-015-openaisui-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-015-openaisui-decision.md): OpenAI Lawsuit Decision
+- [article-016-transparency-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-016-transparency-decision.md): Transparency Decision
+- [article-017-google-anti-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-017-google-anti-decision.md): Google Anti-Competition Decision
+- [article-018-donothing-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-018-donothing-decision.md): Do Nothing Decision
+- [article-019-netflix2022-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-019-netflix2022-decision.md): Netflix 2022 Decision
+- [article-020-visionpro-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-020-visionpro-decision.md): Vision Pro Decision
+- [article-021-tiktok-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-021-tiktok-decision.md): TikTok Decision
+- [article-022-twcongress-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-022-twcongress-decision.md): Taiwan Congress Decision
+- [article-023-jpcompetition.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-023-jpcompetition.md): Japan Competition
+- [article-024-eumeta-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-024-eumeta-decision.md): EU Meta Decision
+- [article-025-run-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-025-run-decision.md): Running Decision
+- [article-026-ai-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-026-ai-decision.md): AI Decision
