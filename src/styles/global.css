@@ -121,6 +121,23 @@ hr {
   margin-bottom: 0.75rem;
 }
 
+/* Education section */
+.education {
+  margin-bottom: 0;
+}
+
+.education ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education li {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  line-height: 1.7;
+}
+
 /* Contact section */
 .contact {
   margin-bottom: 0;
