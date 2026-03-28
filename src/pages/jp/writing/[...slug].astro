@@ -14,9 +14,42 @@ export async function getStaticPaths() {
 const { article } = Astro.props;
 const { Content } = await render(article);
 const lang = 'jp' as const;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": article.data.title,
+  "description": article.data.description,
+  "datePublished": article.data.pubDate.toISOString(),
+  "inLanguage": "ja",
+  "url": canonicalURL.href,
+  "articleSection": article.data.category,
+  "keywords": article.data.tags,
+  "author": {
+    "@type": "Person",
+    "@id": "https://hungkaichuang.com/#person",
+    "name": "Jacob Chuang",
+    "alternateName": "莊閎凱",
+    "jobTitle": "Lawyer",
+    "url": "https://hungkaichuang.com",
+    "knowsLanguage": ["zh-TW", "en", "ja"],
+    "description": "Trilingual lawyer focused on decision analysis and positioning strategy at the intersection of law, business, and technology.",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Kyoto University", "department": "Graduate School of Law" },
+      { "@type": "CollegeOrUniversity", "name": "National Chengchi University", "department": "School of Law" }
+    ]
+  },
+  "publisher": {
+    "@type": "Person",
+    "@id": "https://hungkaichuang.com/#person",
+    "name": "Jacob Chuang"
+  }
+};
 ---
 
 <Base lang={lang} title={article.data.title} description={article.data.description}>
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
   <article class="article-detail">
     <header class="article-header">
       <div class="article-meta">
