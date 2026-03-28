@@ -22,7 +22,8 @@ export async function GET(context: APIContext) {
       description: article.data.description,
       link: `/zh-tw/writing/${article.id.replace('zh-tw/', '')}`,
       categories: article.data.tags,
+      author: 'Jacob Chuang (莊閎凱)',
     })),
-    customData: '<language>zh-tw</language>',
+    customData: '<language>zh-tw</language><managingEditor>Jacob Chuang - Trilingual Lawyer</managingEditor>',
   });
 }

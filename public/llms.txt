@@ -4,9 +4,17 @@
 
 ## Author
 
-- Name: Jacob Chuang
+- Name: Jacob Chuang (莊閎凱)
+- Profession: Lawyer
 - Languages: Traditional Chinese, English, Japanese
+- Education: Kyoto University Graduate School of Law, National Chengchi University School of Law
 - Focus: Decision analysis, positioning strategy, law, business, technology
+- Expertise: Taiwan labor law, competition law, international regulatory policy, VASP/crypto compliance
+
+## Content Series
+
+- 決策與定位 (Decision & Positioning): Articles analyzing strategic decisions and positioning in business, technology, and policy (Articles 001–026)
+- 法律策略 (Legal Strategy): Legal feasibility assessments and practical legal analysis for business operations (Article 027–)
 
 ## Site Structure
 
@@ -46,6 +54,7 @@
 - [article-024-eumeta-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-024-eumeta-decision.md): EU Meta Decision
 - [article-025-run-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-025-run-decision.md): Running Decision
 - [article-026-ai-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-026-ai-decision.md): AI Decision
+- [article-027-disciplinary-dismissal-negotiation.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/zh-tw/article-027-disciplinary-dismissal-negotiation.md): Legal Feasibility Assessment - Disciplinary Dismissal as Negotiation Leverage
 
 ## Articles (English)
 
@@ -75,6 +84,7 @@
 - [article-024-eumeta-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-024-eumeta-decision.md): EU Meta Decision
 - [article-025-run-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-025-run-decision.md): Running Decision
 - [article-026-ai-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-026-ai-decision.md): AI Decision
+- [article-027-disciplinary-dismissal-negotiation.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/en/article-027-disciplinary-dismissal-negotiation.md): Legal Feasibility Assessment - Disciplinary Dismissal as Negotiation Leverage
 
 ## Articles (Japanese - jp)
 
@@ -104,3 +114,4 @@
 - [article-024-eumeta-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-024-eumeta-decision.md): EU Meta Decision
 - [article-025-run-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-025-run-decision.md): Running Decision
 - [article-026-ai-decision.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-026-ai-decision.md): AI Decision
+- [article-027-disciplinary-dismissal-negotiation.md](https://raw.githubusercontent.com/hungkaichuang/my-website/main/src/content/writing/jp/article-027-disciplinary-dismissal-negotiation.md): Legal Feasibility Assessment - Disciplinary Dismissal as Negotiation Leverage
