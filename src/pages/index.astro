@@ -1,3 +1,16 @@
 ---
-return Astro.redirect('/zh-tw');
+const lang = 'zh-tw';
 ---
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0;url=/zh-tw/" />
+    <link rel="canonical" href="https://hungkaichuang.com/zh-tw/" />
+    <title>Jacob Chuang | 莊閎凱律師</title>
+    <meta name="description" content="三語律師，專注於法律、商業與科技交叉領域的決策分析與定位策略。" />
+  </head>
+  <body>
+    <script is:inline>window.location.replace('/zh-tw/');</script>
+  </body>
+</html>
