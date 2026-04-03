@@ -15,4 +15,12 @@ const writing = defineCollection({
   }),
 });
 
-export const collections = { writing };
+const hottake = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/hottake' }),
+  schema: z.object({
+    pubDate: z.date(),
+    lang: z.string(),
+  }),
+});
+
+export const collections = { writing, hottake };
