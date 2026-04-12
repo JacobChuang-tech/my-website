@@ -2,10 +2,13 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://hungkaichuang.com',
   integrations: [sitemap()],
+
   i18n: {
     defaultLocale: 'zh-tw',
     locales: ['zh-tw', 'en', 'jp'],
@@ -14,4 +17,6 @@ export default defineConfig({
       redirectToDefaultLocale: false,
     },
   },
+
+  adapter: cloudflare(),
 });
